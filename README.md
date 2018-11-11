@@ -1,7 +1,7 @@
-# webstandard2019
+# 웹 표준 사이트만들기(2019)
 웹 표준 사이트 만들기 2019 버전입니다.
 
-웹 표준 사이트 만들기 튜토리얼 입니다.
+<h3>웹 표준 사이트 만들기 튜토리얼입니다.</h3>
 <ul>
     <li><a href="http://wtss.tistory.com/168">01. 웹 표준 사이트 만들기(2019) - layout01</a></li>
     <li><a href="http://wtss.tistory.com/169">02. 웹 표준 사이트 만들기(2019) - layout02</a></li>
@@ -11,7 +11,7 @@
 </ul>
 
 
-표준 사이트 만들기 샘플보기
+<h3>웹 표준 사이트 만들기 샘플보기입니다.</h3>
 <ul>
     <li><a href="https://webstoryboy.github.io/webstandard2019/sample168.html">01. 웹 표준 사이트 만들기(2019) - layout01</a></li>
     <li><a href="https://webstoryboy.github.io/webstandard2019/sample169.html">02. 웹 표준 사이트 만들기(2019) - layout02</a></li>
