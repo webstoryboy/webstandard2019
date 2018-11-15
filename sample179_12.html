@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="webstoryboy">
+    <meta name="description" content="웹 표준을 준수한 사이트 예제입니다.">
+    <meta name="keywords" content="웹표준, 웹접근성, 샘플사이트">
+    <meta name="generator" content="brackets">
+    <title>WEBSTANDARD SITE</title>
+    
+    <!-- style 
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    -->
+    
+    <!-- 웹 폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    
+    <style>
+        /* 여백 초기화 */   
+        body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,
+        legend,p,select,table,th,td,tr,textarea,button,form{margin:0;padding:0;}
+        
+        /* a 링크 초기화 */
+        a {color: #222; text-decoration: none;}
+        a:hover {color: #390;}
+
+        /* 폰트 초기화 */
+        body, input, textarea, select, button, table {
+            font-family: 'Nanum Gothic', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; 
+            color: #222; font-size: 13px; line-height: 1.5;}
+    </style>
+    <style>
+        /* 스킵 내비게이션 */
+        #skip {position: relative;}
+        #skip a {position: absolute; left: 0px; top: -35px; width: 140px; border:1px solid #fff; color: #fff; text-align: center; background: #333; line-height: 30px;}
+        #skip a:active, 
+        #skip a:focus {top: 0;}
+        
+        /* 레이아웃 */
+        #wrap {width: 100%; }
+        #header {width: 100%; height: 325px; background: url(img/header_bg.jpg) center top repeat-x;}
+        #contents {width: 100%; height: 800px; background: #222;}
+        #footer {width: 100%; height: 200px; background: #111;}
+        
+        /* 컨텐츠 레이아웃 */
+        #cont_nav {width: 100%; height: 200px; background: #333;}
+        #cont_tit {width: 100%; height: 200px; background: #444;}
+        #cont_ban {width: 100%; height: 200px; background: #555;}
+        #cont_cont {width: 100%; height: 200px; background: #666;}
+
+        /* 컨테이너 */
+        .container {width: 990px; margin: 0 auto; height: inherit; background: rgba(255,255,255,0.3);}
+    
+        /* 헤더 */
+        .header {}
+        .header .header-menu {text-align: right; }
+        .header .header-menu a {color: #fff; padding: 10px 0px 10px 13px; display: inline-block;}
+        .header .header-menu a:hover {color: #666;}
+        .header .header-tit {text-align: center; }
+        .header .header-tit h1 {color: #fff; background-color: #4aa8d4; display: inline-block; font-size: 28px; padding: 5px 20px 6px 20px; margin-top: 40px; font-weight: normal; text-transform: uppercase;}
+        .header .header-tit a {display: inline-block; background-color: #2698cb; font-size: 18px; color:#fff; padding: 5px 20px 6px 20px; margin-top: -5px;}
+
+        .header .header-icon {} 
+    </style>
+</head>
+<body>
+    <!-- 스킵 내비게이션 -->
+    <div id="skip">
+        <a rel="bookmark" href="#cont_nav">전체 메뉴 바로가기</a>
+        <a rel="bookmark" href="#cont_ban">배너 영역 바로가기</a>
+        <a rel="bookmark" href="#cont_cont">컨텐츠 영역 바로가기</a>
+    </div>
+    <!-- //스킵 내비게이션 -->
+    
+    <div id="wrap">
+        <div id="header" role="header">
+            <div class="container">
+                <div class="header">
+                    <div class="header-menu">
+                        <a href="https://wiss.tistory.com/">Desinger</a>
+                        <a href="https://webstoryboy.co.kr/">Publisher</a>
+                        <a href="https://www.youtube.com/channel/UCsvQSv7EeCMHyYb9ENKAJZw">Youtube</a>
+                    </div>
+                    <!-- //헤더 메뉴 -->
+                    <div class="header-tit">
+                        <h1>Professional Publisher &amp; Designer</h1><br>
+                        <a href="https://webstoryboy.co.kr/">webstoryboy.co.kr</a>
+                    </div>
+                    <!-- //헤더 타이틀 -->
+                    <div class="header-icon"></div>
+                </div>
+            </div>
+        </div>
+        <!-- //header -->
+        
+        <div id="contents">
+            <div id="cont_nav" role="nav">
+                <div class="container">cont_nav</div>
+            </div>
+            <!-- //cont_nav -->
+            <div id="cont_tit" role="title">
+                <div class="container">cont_tit</div>
+            </div>
+            <!-- //cont_tit -->
+            <div id="cont_ban" role="banner">
+                <div class="container">cont_ban</div>
+            </div>
+            <!-- //cont_ban -->
+            <div id="cont_cont" role="content">
+                <div class="container">cont_cont</div>
+            </div>
+            <!-- //cont_cont -->
+        </div>
+        <!-- //contents -->
+        
+        <div id="footer" role="footer">
+            <div class="container">footer</div>
+        </div>
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
