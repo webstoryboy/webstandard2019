@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="webstoryboy">
+    <meta name="description" content="웹 표준을 준수한 사이트 예제입니다.">
+    <meta name="keywords" content="웹표준, 웹접근성, 샘플사이트">
+    <meta name="generator" content="brackets">
+    <title>WEBSTANDARD SITE</title>
+    
+    <!-- style 
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    -->
+    
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    
+    <!-- 웹 폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
+    
+    <style>
+        /* 여백 초기화 */   body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,th,td,tr,textarea,button,form{margin:0;padding:0;}
+        
+        /* a 링크 초기화 */
+        a {color: #222; text-decoration: none;}
+        a:hover {color: #390;}
+
+        /* 폰트 초기화 */
+        body, input, textarea, select, button, table {
+            font-family: 'Nanum Gothic', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #222; font-size: 13px; line-height: 1.5;}
+        
+        /* 폰트 스타일 초기화 */
+        em,address {font-style: normal;}
+
+        /* 블릿기호 초기화 */
+        de,ul,li,ol,menu {list-style:none;}
+        
+        /* 제목 태그 초기화 */
+        h1,h2,h3,h4,h5,h6 {font-size: 13px; font-weight: normal;}
+        
+        /* 테두리 초기화 */
+        img,fieldset {border:0 none;}
+        
+        /* 버튼 초기확 */
+        button {border: 0;}
+        
+        /* IR 효과 */
+        .ir_pm {display:block; overflow:hidden; font-size:0; line-height:0; text-indent:-9999px;} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
+        .ir_wa {display:block; overflow:hidden; position:relative; z-index:-1; width:100%; height: 100%;} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
+        .ir_su {overflow: hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px;} /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+    
+        /* margin, padding */
+        .mt10 {margin-top: 10px !important;}
+        .mt15 {margin-top: 15px !important;}
+        .mt20 {margin-top: 20px !important;}
+        .mt25 {margin-top: 25px !important;}
+        .mt30 {margin-top: 30px !important;}
+        .mt35 {margin-top: 35px !important;}
+        .mt40 {margin-top: 40px !important;}
+        .mt45 {margin-top: 45px !important;}
+        .mt50 {margin-top: 50px !important;}
+    </style>
+    <style>
+        /* 스킵 내비게이션 */
+        #skip {position: relative;}
+        #skip a {position: absolute; left: 0px; top: -35px; width: 140px; border:1px solid #fff; color: #fff; text-align: center; background: #333; line-height: 30px;}
+        #skip a:active, 
+        #skip a:focus {top: 0;}
+        
+        /* 레이아웃 */
+        #wrap {width: 100%; }
+        #header {width: 100%; height: 325px; background: url(img/header_bg.jpg) center top repeat-x;}
+        #contents {}
+        #footer {border-top: 1px solid #eee;}
+        
+        /* 컨텐츠 레이아웃 */
+        #cont_nav {background-color: #f6fdff; display: none;}
+        #cont_tit {background-color: #EAF7FD; background: rgba(154, 216, 244, 0.2); /* ie9부터 적용*/}
+        #cont_ban {background-color: #dceff7;}
+        #cont_cont {background-color: #f6fdff;}
+
+        /* 컨테이너 */
+        .container {width: 990px; margin: 0 auto; height: inherit; /*background: rgba(255,255,255,0.3);*/}
+    
+        /* 헤더 */
+        .header .header-menu {text-align: right; }
+        .header .header-menu a {color: #fff; padding: 10px 0px 10px 13px; display: inline-block;}
+        .header .header-menu a:hover {color: #666;}
+        .header .header-tit {text-align: center; }
+        .header .header-tit h1 {color: #fff; background-color: #4aa8d4; display: inline-block; font-size: 28px; padding: 5px 20px 6px 20px; margin-top: 40px; font-weight: normal; text-transform: uppercase;}
+        .header .header-tit a {display: inline-block; background-color: #2698cb; font-size: 18px; color:#fff; padding: 5px 20px 6px 20px; margin-top: -5px;}
+        .header .header-icon {text-align: center; margin-top: 30px;} 
+        .header .header-icon a {width: 60px; height: 60px; display: inline-block; background: url(img/icon.png); margin: 0 3px;}
+        .header .header-icon a.icon1 {background-position: 0px 0px;}
+        .header .header-icon a.icon2 {background-position: 0px -60px;}
+        .header .header-icon a.icon3 {background-position: 0px -120px;}
+        .header .header-icon a.icon4 {background-position: 0px -180px;}
+        .header .header-icon a:hover.icon1 {background-position: -60px 0px;}
+        .header .header-icon a:hover.icon2 {background-position: -60px -60px;}
+        .header .header-icon a:hover.icon3 {background-position: -60px -120px;}
+        .header .header-icon a:hover.icon4 {background-position: -60px -180px;}
+        
+        /* 전체 메뉴 */
+        .nav {overflow: hidden; padding: 20px 0;}
+        .nav > div {float: left; width: 40%;} 
+        .nav > div:last-child {width: 20%;} /* ie9부터 사용가능 */
+        .nav > div.last {width: 20%;}
+        .nav > div h3 {font-size: 18px; color:#25a2d0; margin-bottom: 4px;}
+        .nav > div ol {overflow: hidden; }
+        .nav > div ol li {float: left; width: 50%; padding-bottom: 2px; }
+        .nav > div.last ol li {width: 100%;}
+        .nav > div ol li a:hover {text-decoration: underline;}
+        
+        /* 타이틀 */
+        .tit {position: relative; text-align: center}
+        .tit h2 {font-size: 40px; color:#2c94c4; letter-spacing: 2px; padding: 5px 0; font-family: 'Nanum Brush Script', cursive;}
+        .tit .btn {display: block; width: 60px; height: 60px; background: url(img/icon.png) no-repeat 0 -600px; position: absolute; right: 0; top: 5px;}
+        .tit .btn.on {background-position: 0 -660px;}
+        
+        /* 배너 
+        .ban {position: relative; padding: 24px 0 20px;}
+        .ban a.prev {position: absolute; left: -70px; top: 60px; width: 43px; height: 43px; background: url(img/icon.png) -150px 0}
+        .ban a.next {position: absolute; right: -70px; top: 60px; width: 43px; height: 43px; background: url(img/icon.png) -150px -43px}
+        .ban a.prev:hover {background-position: -193px 0;}
+        .ban a.next:hover {background-position: -193px -43px;}
+        .ban ul {overflow: hidden;}
+        .ban ul li {float: left; width: 330px;}
+        .ban ul li:nth-child(2) {text-align: center;}  ie9부터 적용
+        .ban ul li:last-child {text-align: right;}  ie9부터 적용 
+        .ban ul li.ban_img1 {text-align: left;}
+        .ban ul li.ban_img2 {text-align: center;}
+        .ban ul li.ban_img3 {text-align: right;}
+        .ban ul li img {border: 4px solid #dcdcdc;}
+        .ban ul li img:hover {border-color: #98bcdc;}*/
+        /* 슬릭 배너 */
+        .ban {position: relative; padding: 24px 0 40px;}
+        .ban .slick-prev {position: absolute; left: -70px; top: 80px; width: 43px; height: 43px; background: url(img/icon.png) -150px 0; text-indent: -9999px;}
+        .ban .slick-next {position: absolute; right: -70px; top: 80px; width: 43px; height: 43px; background: url(img/icon.png) -150px -43px; text-indent: -9999px;}
+        .ban .slick-prev:hover {background-position: -193px 0;}
+        .ban .slick-next:hover {background-position: -193px -43px;}
+        .ban img {border: 4px solid #dcdcdc; width: 100%; box-sizing: border-box;}
+        .ban img:hover {border-color: #98bcdc;}
+        .slick-slide {margin: 10px;}
+        .slick-dots{position: absolute; bottom: 15px; display: block; width: 100%; text-align: center;}
+        .slick-dots li{position: relative; display: inline-block; width: 15px; height: 15px; margin: 5px;}
+        .slick-dots li button {font-size: 0; line-height: 0; display: block; width: 15px; height: 15px; cursor: pointer; background: #5dbfeb; border-radius: 50%;}
+        .slick-dots li.slick-active button {background: #2B91C8;}
+               
+        /* 컨텐츠 박스 요소 width = padding + margin + border */
+        .cont {overflow: hidden; padding-top: 30px;}
+        .cont .column {position: relative; float: left; width: 289px; height: 363px; margin: 0 30px 30px 0; padding-right: 30px;}
+        .cont .col1 {border-right: 1px solid #c8c8c8;}
+        .cont .col2 {border-right: 1px solid #c8c8c8;}
+        .cont .col3 {margin-right: 0; padding-right: 0;}
+        .cont .col4 {border-right: 1px solid #c8c8c8;}
+        .cont .col5 {border-right: 1px solid #c8c8c8;}
+        .cont .col6 {margin-right: 0; padding-right: 0;}
+
+        .cont .column .ico_img {display: block; width: 60px; height: 60px; background: url(img/icon.png); position: absolute; left: 0; top: 0;}
+        .cont .column .ico_tit {padding-left: 70px; font-size: 16px; color: #2c94c4; font-weight: bold;}
+        .cont .column .ico_desc {padding-left: 70px; border-bottom: 1px solid #d0d0d0; padding-bottom: 15px; margin-bottom: 15px;}
+
+        .cont .col1 .ico_img {background-position: 0px -240px;}
+        .cont .col2 .ico_img {background-position: 0px -300px;}
+        .cont .col3 .ico_img {background-position: 0px -360px;}
+        .cont .col4 .ico_img {background-position: 0px -420px;}
+        .cont .col5 .ico_img {background-position: 0px -480px;}
+        .cont .col6 .ico_img {background-position: 0px -540px;}
+        .cont .col1 .ico_img:hover {background-position: -60px -240px;}
+        .cont .col2 .ico_img:hover {background-position: -60px -300px;}
+        .cont .col3 .ico_img:hover {background-position: -60px -360px;}
+        .cont .col4 .ico_img:hover {background-position: -60px -420px;}
+        .cont .col5 .ico_img:hover {background-position: -60px -480px;}
+        .cont .col6 .ico_img:hover {background-position: -60px -540px;}
+        
+        /* 게시판 */
+        .notice {position: relative;}
+        .notice h4 {font-size: 14px; color: #0093bd; padding-bottom: 3px; font-weight: 700;}
+        .notice ul li {overflow: hidden; text-overflow: ellipsis; white-space: nowrap; background: url(img/dot.gif) no-repeat 0 9px; padding-left: 10px;}
+        .notice ul li a {font-size: 12px;}
+        .notice a.more {position: absolute; right: 0; top: 0; display: block; background: url(img/icon.png) -150px -90px; width: 17px; height: 17px;}
+        .notice a.more:hover {background-position: -167px -90px;}
+
+        /* 게시판2 */
+        .notice2 {position: relative; margin-top: 20px;}
+        .notice2 h4 {font-size: 14px; color: #0093bd; padding-bottom: 3px; font-weight: 700;}
+        .notice2 li {overflow: hidden; background: url(img/dot.gif) no-repeat 0 9px; padding-left: 10px;}
+        .notice2 li a {float: left; width: 60%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; }
+        .notice2 li span {float: right; width: 30%; text-align: right; font-size: 12px;}
+        .notice2 a.more {position: absolute; right: 0; top: 0; display: block; background: url(img/icon.png) -150px -90px; width: 17px; height: 17px;}
+        .notice2 a.more:hover {background-position: -167px -90px;}
+        
+        /* 게시판3 */
+        .notice3 {position: relative;}
+        .notice3 h4 {font-size: 14px; color: #0093bd; padding-bottom: 4px; font-weight: 700;}
+        .notice3 li {position: relative; padding: 8px 0 14px 60px;}
+        .notice3 li a img {position: absolute; left: 0; top: 0; width: 50px; border: 1px solid #0093bd;}
+        .notice3 li a strong {display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+        .notice3 li a span {display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px;}
+        .notice3 a.more {position: absolute; right: 0; top: 0; display: block; background: url(../img/icon.png) -150px -90px; width: 17px; height: 17px;}
+        .notice3 a.more:hover {background-position: -167px -90px;}
+        
+        /* 마우스 오버효과1 */
+        .notice_hover h4 {font-size: 14px; color: #0093bd; padding-bottom: 4px; font-weight: 700;}
+        .notice_hover ul {overflow: hidden;}
+        .notice_hover li {float: left; width: 93px; margin-right: 5px; text-align: center;}
+        .notice_hover li:last-child {margin-right: 0;} /* ie9부터 적용 */
+        .notice_hover li.last {margin-right: 0;} /* 모든 브라우저 버전 적용 */
+        .notice_hover li a span {position: relative; display: block; width: 93px; height: 93px; line-height: 93px;}
+        .notice_hover li a span img {width: 93px; }
+        .notice_hover li a span em {visibility: hidden; position: absolute; left: 0; top: 0; background: rgba(0,0,0,0.7); color:#fff; width: 100%; height: 100%; text-align: center;} /* rgba ie9부터 적용 */
+        .notice_hover li a span:hover em {visibility: visible;}
+        .notice_hover li a strong {padding-top: 3px; display: inline-block; font-size: 12px;}
+    
+        /* 마우스 오버효과2 */
+        .notice_hover2 ul {overflow: hidden; }
+        .notice_hover2 li {float: left; width: 93px; text-align: center; margin-right: 5px;}
+        .notice_hover2 li.last {margin-right: 0;}
+        .notice_hover2 li a span {position: relative; display: block; width: 93px; height: 93px;}
+        .notice_hover2 li a span img {width: 93px;}
+        .notice_hover2 li a span em {visibility: hidden; position: absolute; left: 0; bottom: 0; background: rgba(0,0,0,0.7); color: #fff; width: 100%;}
+        .notice_hover2 li a strong {padding-top: 3px; display: inline-block;}
+        .notice_hover2 li a span:hover em {visibility: visible;}
+        
+        /* 탭 메뉴 */
+        .tab_menu {position: relative; border: 1px solid #ccc; padding: 8px; height: 105px;}
+        .tab_menu ul {overflow: hidden; border-bottom: 1px solid #ccc; }
+        .tab_menu ul li {float: left; border: 1px solid #ccc; margin-right: -1px; margin-bottom: -1px; }
+        .tab_menu ul li a {padding: 5px 10px; display: block;}
+        .tab_menu ul li ul {position: absolute; left: 0; top: 48px; border: 0; width: 270px; }
+        .tab_menu ul li ul li {float: none; border: 0; padding-left: 18px; background: url(img/dot.gif) no-repeat 9px 8px;}
+        .tab_menu ul li ul li a {padding: 0 0 3px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%;}
+        .tab_menu ul li.active {background: #2c94c4;}
+        .tab_menu ul li.active a {color: #fff;}
+        .tab_menu ul li.active ul li a {color: #333;}
+        
+        /* 게시판4 */
+        .notice4 {position: relative; border: 1px solid #ccc;}
+        .notice4 h4 {font-size: 14px; color: #0093bd; border-bottom: 1px solid #ccc; font-weight: 700; padding: 8px 10px;}
+        .notice4 h4 em {color: #cf3292;}
+        .notice4 ul {padding: 10px;}
+        .notice4 li {overflow: hidden; background: url(img/dot.gif) no-repeat 0px 8px; padding-left: 8px; padding-bottom: 2px; }
+        .notice4 li a {float: left; width: 60%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+        .notice4 li span {float: right; width: 30%; text-align: right;}
+        .notice4 a.more {position: absolute; right: 9px; top: 9px;}
+        
+        /* 갤러리 */
+        .gallery {position: relative; border: 1px solid #ccc; height: 255px; overflow: hidden;}
+        .gallery h4 {font-size: 14px; color: #0093bd; border-bottom: 1px solid #ccc; padding: 10px 0 8px 11px; font-weight: bold;}
+        .gallery .gallery_btn {position: absolute; right: 5px; top: 7px;}
+        .gallery .gallery_btn ul {overflow: hidden;}
+        .gallery .gallery_btn li {float: left; margin: 1px 2px;}
+        .gallery .gallery_btn li a {display: block; width: 23px; height: 23px; background: url(img/icon.png) no-repeat;}
+        .gallery .gallery_btn li.gb_icon1 a {background-position: -150px -120px}
+        .gallery .gallery_btn li.gb_icon2 a {background-position: -150px -143px}
+        .gallery .gallery_btn li.gb_icon3 a {background-position: -150px -166px}
+        .gallery .gallery_btn li.gb_icon4 a {background-position: -150px -189px}
+        .gallery .gallery_btn li.gb_icon1 a:hover {background-position: -173px -120px}
+        .gallery .gallery_btn li.gb_icon2 a:hover {background-position: -173px -143px}
+        .gallery .gallery_btn li.gb_icon3 a:hover {background-position: -173px -166px}
+        .gallery .gallery_btn li.gb_icon4 a:hover {background-position: -173px -189px}
+        .gallery .gallery_img img {width: 100%;}
+        
+        /* 슬릭 갤러리 */
+        .gallery .gallery_img .slick-slide {margin: 0px;}
+        .gallery .gallery_btn button {float: left; margin: 1px 2px; display: block; width: 23px; height: 23px; background: url(img/icon.png) no-repeat;}
+        .gallery .gallery_btn .gb_icon1 {background-position: -150px -120px}
+        .gallery .gallery_btn .gb_icon2 {background-position: -150px -143px}
+        .gallery .gallery_btn .gb_icon3 {background-position: -150px -166px}
+        .gallery .gallery_btn .gb_icon4 {background-position: -150px -189px}
+        .gallery .gallery_btn .gb_icon1:hover {background-position: -173px -120px}
+        .gallery .gallery_btn .gb_icon2:hover {background-position: -173px -143px}
+        .gallery .gallery_btn .gb_icon3:hover {background-position: -173px -166px}
+        .gallery .gallery_btn .gb_icon4:hover {background-position: -173px -189px}
+        
+        /* 로그인 */
+        #login-wrap {margin-bottom: 15px; padding: 15px; background: #f2f4f5;}
+        .login_header {overflow: hidden; font-size: 12px; height: 30px;}
+        .login_header .lh_check {float: left; padding-right: 15px;}
+        .login_header .lh_check .input_check {vertical-align: -2px;}
+        .login_header .lh_ip {float: left;}
+        .login_header .lh_ip em {color: #0093bd; text-decoration: underline;}
+        .login_content {position: relative;}
+        .login_content .lc_btn {position:absolute; right: 0; top: 0; width: 62px; height: 49px; background: #fff; border: 1px solid #bebebe;}
+        .login_content .input_text {width: 180px; height: 17px; padding: 2px 6px; border: 1px solid #bebebe; margin-bottom: 3px; background: #fff;}
+        .loing_footer {margin-top: 5px;}
+        .loing_footer li {display: inline;}
+        .loing_footer li a {font-size: 12px;}
+        
+        /* 팝업 */
+        .popup h4 {font-size: 14px; color: #0093bd; padding-bottom: 4px; font-weight: 700;}
+        .popup ul {overflow: hidden;}
+        .popup li {float: left; width: 93px; margin-right: 5px; }
+        .popup li.last {margin-right: 0;}
+        .popup li img {width: 100%;}
+        
+        /* 푸터 */
+        .footer {padding: 25px 0; text-align: center;}
+        .footer ul {margin-bottom: 20px;}
+        .footer li {position: relative; display: inline; padding: 0 7px 0 10px;}
+        .footer li:before {content: ''; width: 1px; height: 12px; background: #ccc; position: absolute; left: 0; top: 2px;}
+        .footer li:first-child:before {width: 0; height: 0;}
+        .footer .w3c {margin-top: 15px;}
+        
+        /* 레이어팝업 */
+        #layer {display:none; position: fixed; left: 50px; top: 50px; width: 700px; z-index: 2000; border: 10px solid #dceff7; box-shadow: 3px 3px 10px rgba(0,0,0,0.4);}
+        #layer img {width: 100%; display: block;}
+        #layer .close {position: absolute; right: 20px; top: 20px; background: #0093bd; padding: 1px 6px; color: #fff;}
+        #layer .close:hover {text-decoration: underline;}
+    </style>
+</head>
+<body>
+    <!-- 스킵 내비게이션 -->
+    <div id="skip">
+        <a rel="bookmark" href="#cont_nav">전체 메뉴 바로가기</a>
+        <a rel="bookmark" href="#cont_ban">배너 영역 바로가기</a>
+        <a rel="bookmark" href="#cont_cont">컨텐츠 영역 바로가기</a>
+    </div>
+    <!-- //스킵 내비게이션 -->
+    
+    <div id="wrap">
+        <div id="header" role="header">
+            <div class="container">
+                <div class="header">
+                    <div class="header-menu">
+                        <a href="https://wiss.tistory.com/">Desinger</a>
+                        <a href="https://webstoryboy.co.kr/">Publisher</a>
+                        <a href="https://www.youtube.com/channel/UCsvQSv7EeCMHyYb9ENKAJZw">Youtube</a>
+                    </div>
+                    <!-- //헤더 메뉴 -->
+                    <div class="header-tit">
+                        <h1>Professional Publisher &amp; Designer</h1><br>
+                        <a href="https://webstoryboy.co.kr/">webstoryboy.co.kr</a>
+                    </div>
+                    <!-- //헤더 타이틀 -->
+                    <div class="header-icon">
+                        <a href="#" class="icon1"><span class="ir_pm">icon1</span></a>
+                        <a href="#" class="icon2"><span class="ir_pm">icon2</span></a>
+                        <a href="#" class="icon3"><span class="ir_pm">icon3</span></a>
+                        <a href="#" class="icon4"><span class="ir_pm">icon4</span></a>
+                    </div>
+                    <!-- //헤더 아이콘 -->
+                </div>
+            </div>
+        </div>
+        <!-- //header -->
+        
+        <div id="contents">
+            <div id="cont_nav">
+                <div class="container">
+                    <h2 class="ir_su">전체 메뉴</h2>
+                    <div class="nav">
+                        <div>
+                            <h3>HTML Reference</h3>
+                            <ol>
+                                <li><a href="#">HTML 태그(Tag)</a></li>
+                                <li><a href="#">블록 요소/인라인 요소</a></li>
+                                <li><a href="#">DTD 선언</a></li>
+                                <li><a href="#">언어 속성 설정</a></li>
+                                <li><a href="#">HTML &lt;title&gt;</a></li>
+                                <li><a href="#">HTML &lt;meta&gt;</a></li>
+                                <li><a href="#">특수문자</a></li>
+                                <li><a href="#">하이퍼 링크</a></li>
+                                <li><a href="#">HTML &lt;style&gt;</a></li>
+                                <li><a href="#">HTML &lt;html&gt;</a></li>
+                                <li><a href="#">HTML &lt;head&gt;</a></li>
+                                <li><a href="#">HTML &lt;div&gt;</a></li>
+                                <li><a href="#">HTML &lt;colgroup&gt;</a></li>
+                                <li><a href="#">HTML &lt;caption&gt;</a></li>
+                            </ol>
+                        </div>
+                        <div>
+                            <h3>CSS Reference</h3>
+                            <ol>
+                                <li><a href="#">CSS 선택자</a></li>
+                                <li><a href="#">CSS 단위</a></li>
+                                <li><a href="#">CSS 색상</a></li>
+                                <li><a href="#">CSS 선언 방법</a></li>
+                                <li><a href="#">상대주소와 절대주소</a></li>
+                                <li><a href="#">CSS float</a></li>
+                                <li><a href="#">이미지 표현 방법</a></li>
+                                <li><a href="#">이미지 스프라이트</a></li>
+                                <li><a href="#">IR 효과</a></li>
+                                <li><a href="#">이미지 최적화</a></li>
+                                <li><a href="#">background-color</a></li>
+                                <li><a href="#">border-style</a></li>
+                                <li><a href="#">font-size</a></li>
+                                <li><a href="#">text-align</a></li>
+                            </ol>
+                        </div>
+                        <div class="last">
+                            <h3>Webstandard</h3>
+                            <ol>
+                                <li><a href="#">웹 표준</a></li>
+                                <li><a href="#">웹 접근성</a></li>
+                                <li><a href="#">W3C</a></li>
+                                <li><a href="#">웹 접근성 연구소</a></li>
+                                <li><a href="#">네이버 널리</a></li>
+                                <li><a href="#">다음 다룸</a></li>
+                                <li><a href="#">Webstandard</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //cont_nav -->
+            
+            <div id="cont_tit">
+                <div class="container">
+                    <div class="tit">
+                        <h2>&ldquo;나는 퍼블리셔다!&rdquo;</h2>
+                        <a href="#" class="btn"><span class="ir_pm">전체메뉴</span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- //cont_tit -->
+            
+            <div id="cont_ban">
+                <div class="container">
+                    <div class="ban">
+<!--
+                        <a href="#" class="prev"><span class="ir_pm">이전 이미지</span></a>
+                        <ul>
+                            <li class="ban_img1"><a href="#"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a></li>
+                            <li class="ban_img2"><a href="#"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a></li>
+                            <li class="ban_img3"><a href="#"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a></li>
+                        </ul>
+                        <a href="#" class="next"><span class="ir_pm">다음 이미지</span></a>
+-->
+                        <div><a href="#"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a></div>
+                        <div><a href="#"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a></div>
+                        <div><a href="#"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a></div>
+                        <div><a href="#"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a></div>
+                        <div><a href="#"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a></div>
+                        <div><a href="#"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a></div>
+                        <div><a href="#"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a></div>
+                        <div><a href="#"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a></div>
+                        <div><a href="#"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- //cont_ban -->
+            
+            <div id="cont_cont">
+                <div class="container">
+                    <div class="cont">
+                        <div class="column col1">
+                            <h3><span class="ico_img ir_pm">아이콘1</span><em class="ico_tit">Notice</em></h3>
+                            <p class="ico_desc">가장 웹 페이지에서 기본이 되는 게시판 유형입니다.</p>
+                            <!-- 게시판 -->
+                            <div class="notice">
+                                <h4>웹 퍼블리셔 면접 질문</h4>
+                                <ul>
+                                    <li><a href="#">display:inline과 display:block의 차이점은 무엇인가요?</a></li>
+                                    <li><a href="#">HTML 태그 중에 dl,dd,ul,ol,li의 차이점이 무엇인가요?</a></li>
+                                    <li><a href="#">HTML 태그 중에 strong과 em 태그의 차이점은 무엇인가요?</a></li>
+                                    <li><a href="#">컨텐츠 요소를 가운데로 오게 하는 방법을 알려주세요!</a></li>
+                                    <li><a href="#">독타입을 선언하는 이유에 대해서 설명하세요.</a></li>
+                                </ul>
+                                <a href="#" class="more ir_pm" title="더보기">더보기</a>
+                            </div>
+                            <!-- //게시판 -->
+                            
+                            <!-- 게시판 유형2 -->
+                            <div class="notice2">
+                                <h4>웹 디자이너 면접 질문</h4>
+                                <ul>
+                                    <li><a href="#">JPG, PNG, GIF의 차이점이 무엇인가요?</a><span>2018.11.16</span></li>
+                                    <li><a href="#">UI 디자인과 UX 디자인의 차이점을 설명하세요.</a><span>2018.11.16</span></li>
+                                    <li><a href="#">인터랙션 디자인의 핵심은 무엇이라고 생각하나요?</a><span>2018.11.16</span></li>
+                                    <li><a href="#">포트폴리오를 하면서 가장 잘 했다고 생각하는 부분은 무엇인가요?</a><span>2018.11.16</span></li>
+                                    <li><a href="#">웹 디자인과 모바일 디자인의 차이가 무엇이라고 생각하나요?</a><span>2018.11.16</span></li>
+                                </ul>
+                                <a href="#" class="more ir_pm" title="더보기">더보기</a>
+                            </div>
+                            <!-- //게시판 유형2 -->
+                        </div>
+                        <!-- //col1 -->
+                        <div class="column col2">
+                            <h3><span class="ico_img ir_pm">아이콘2</span><em class="ico_tit">Notice</em></h3>
+                            <p class="ico_desc">가장 웹 페이지에서 기본이 되는 게시판 유형입니다.</p>
+                            <!-- 게시판 유형3 -->
+                            <div class="notice3">
+                                <h4>HTML Reference</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/notice01.jpg" alt="이미지1">
+                                            <strong>[HTML] &lt;table&gt;</strong>
+                                            <span>&lt;table&gt; 태그는 표를 만들 때 사용합니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/notice02.jpg" alt="이미지2">
+                                            <strong>[HTML] &lt;div&gt;</strong>
+                                            <span>&lt;div&gt; 태그는 문서의 섹션을 만들거나 영역을 나눌 때 사용합니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/notice03.jpg" alt="이미지3">
+                                            <strong>[HTML] &lt;dl&gt;</strong>
+                                            <span>&lt;dl&gt; 태그는 용어를 설명하는 목록형 태그입니다.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/notice04.jpg" alt="이미지4">
+                                            <strong>[HTML] &lt;em&gt;</strong>
+                                            <span>&lt;em&gt; 태그는 텍스트를 강조할 때 사용합니다.</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="more ir_pm" title="더보기">더보기</a>
+                            </div>
+                            <!-- //게시판 유형3 -->
+                        </div>
+                        <!-- //col2 -->
+                        <div class="column col3">
+                            <h3><span class="ico_img ir_pm">아이콘3</span><em class="ico_tit">Notice</em></h3>
+                            <p class="ico_desc">가장 웹 페이지에서 기본이 되는 게시판 유형입니다.</p>
+                            <!-- 로그인 -->
+                            <div id="login-wrap">
+                                <h4 class="ir_su">로그인 정보</h4>
+                                <form id="login_form" name="login_form" method="post">
+                                    <fieldset>
+                                        <legend class="ir_su">로그인 및 관련 설정</legend>
+                                        <div class="login_header">
+                                            <h5 class="ir_su">로그인 보안</h5>
+                                            <div class="lh_check">
+                                                <input id="infor_check" type="checkbox" class="input_check">
+                                                <label for="infor_check">로그인 상태 유지</label>
+                                            </div>
+                                            <div class="lh_ip">
+                                                IP보안 <em>ON</em>
+                                            </div>
+                                        </div>
+                                        <div class="login_content">
+                                            <h5 class="ir_su">로그인 영역</h5>
+                                            <div class="lc_text">
+                                                <label for="uid" class="ir_su">아이디</label>
+                                                <input type="text" id="uid" name="uid" class="input_text" maxlength="20" placeholder="아이디">
+                                                <label for="upw" class="ir_su">비밀번호</label>
+                                                <input type="password" id="upw" name="upw" class="input_text" maxlength="20" placeholder="비밀번호">
+                                            </div>
+                                            <button class="lc_btn" type="submit">로그인</button>
+                                        </div>
+                                        <div class="loing_footer">
+                                            <h5 class="ir_su">로그인 문제해결</h5>
+                                            <ul>
+                                                <li><a href="#"><strong>회원가입</strong></a> /</li>
+                                                <li><a href="#">아이디</a>&middot;<a href="#">비밀번호 찾기</a></li>
+                                            </ul>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <!-- //로그인 -->
+                            <!-- 팝업 -->
+                            <div class="popup">
+                                <h4>Advertisement</h4>
+                                <ul>
+                                    <li class="layer"><a href="#"><img src="img/sban07.jpg" alt="이미지1"></a></li>
+                                    <li class="window"><a href="#"><img src="img/sban08.jpg" alt="이미지2"></a></li>
+                                    <li class="last"><a href="#"><img src="img/sban09.jpg" alt="이미지3"></a></li>
+                                </ul>
+                            </div>
+                            <!-- //팝업 -->
+                        </div>
+                        <!-- //col3 -->
+                        <div class="column col4">
+                            <h3><span class="ico_img ir_pm">아이콘4</span><em class="ico_tit">Notice</em></h3>
+                            <p class="ico_desc">가장 웹 페이지에서 기본이 되는 게시판 유형입니다.</p>
+                            <!-- 오버효과 -->
+                            <div class="notice_hover">
+                                <h4>Mouse Hover</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span><img src="img/sban01.jpg" alt="이미지1"><em>바로가기</em></span>
+                                            <strong>와이어 프레임</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span><img src="img/sban02.jpg" alt="이미지2"><em>바로가기</em></span>
+                                            <strong>스케치 작업</strong>
+                                        </a>
+                                    </li>
+                                    <li class="last">
+                                        <a href="#">
+                                            <span><img src="img/sban03.jpg" alt="이미지3"><em>바로가기</em></span>
+                                            <strong>UI 디자인</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //오버효과 -->
+                            <!-- 오버효과2 -->
+                            <div class="notice_hover2 mt15">
+                                <h4 class="ir_su">Mouse Hover2</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span><img src="img/sban04.jpg" alt="이미지1"><em>바로가기</em></span>
+                                            <strong>HTML</strong>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span><img src="img/sban05.jpg" alt="이미지2"><em>바로가기</em></span>
+                                            <strong>CSS</strong>
+                                        </a>
+                                    </li>
+                                    <li class="last">
+                                        <a href="#">
+                                            <span><img src="img/sban06.jpg" alt="이미지3"><em>바로가기</em></span>
+                                            <strong>jQuery</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //오버효과2 -->
+                        </div>
+                        <!-- //col4 -->
+                        <div class="column col5">
+                            <h3><span class="ico_img ir_pm">아이콘5</span><em class="ico_tit">Notice</em></h3>
+                            <p class="ico_desc">가장 웹 페이지에서 기본이 되는 게시판 유형입니다.</p>
+                            <!-- 탭 메뉴 -->
+                            <div class="tab_menu">
+                                <h4 class="ir_su">탭 메뉴</h4>
+                                <ul>
+                                    <li class="active"><a href="#">공지사항1</a>
+                                        <ul>
+                                            <li><a href="#">첫 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.</a></li>
+                                            <li><a href="#">첫 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.</a></li>
+                                            <li><a href="#">첫 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">공지사항2</a>
+                                        <ul>
+                                            <li><a href="#">두 번째 공지사항 탭메뉴 테스트 목록입니다.</a></li>
+                                            <li><a href="#">두 번째 공지사항 탭메뉴 테스트 목록입니다.</a></li>
+                                            <li><a href="#">두 번째 공지사항 탭메뉴 테스트 목록입니다.</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">공지사항3</a>
+                                        <ul>
+                                            <li><a href="#">세 번째 공지사항 탭메뉴 테스트 목록입니다.</a></li>
+                                            <li><a href="#">세 번째 공지사항 탭메뉴 테스트 목록입니다.</a></li>
+                                            <li><a href="#">세 번째 공지사항 탭메뉴 테스트 목록입니다.</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //탭 메뉴 -->
+                            <!-- 게시판 유형4 -->
+                            <div class="notice4 mt15">
+                                <h4>최신 <em>공지사항</em></h4>
+                                <ul>
+                                    <li><a href="#">웹 디자이너와 웹 퍼블리셔의 차이점은 무엇인가요?</a><span>2018.11.19</span></li>
+                                    <li><a href="#">웹 디자이너와 웹 퍼블리셔의 차이점은 무엇인가요?</a><span>2018.11.19</span></li>
+                                    <li><a href="#">웹 디자이너와 웹 퍼블리셔의 차이점은 무엇인가요?</a><span>2018.11.19</span></li>
+                                </ul>
+                                <a href="#" class="more" title="더보기">더보기</a>
+                            </div>
+                            <!-- //게시판 유형4 -->
+                        </div>
+                        <!-- //col5 -->
+                        <div class="column col6">
+                            <h3><span class="ico_img ir_pm">아이콘6</span><em class="ico_tit">Notice</em></h3>
+                            <p class="ico_desc">가장 웹 페이지에서 기본이 되는 게시판 유형입니다.</p>
+                            <!-- 갤러리 -->
+                            <div class="gallery">
+                                <h4>포트폴리오</h4>
+<!--
+                                <div class="gallery_btn">
+                                    <ul>
+                                        <li class="gb_icon1"><a href="#"><span class="ir_pm">시작</span></a></li>
+                                        <li class="gb_icon2"><a href="#"><span class="ir_pm">정지</span></a></li>
+                                        <li class="gb_icon3"><a href="#"><span class="ir_pm">이전이미지</span></a></li>
+                                        <li class="gb_icon4"><a href="#"><span class="ir_pm">다음이미지</span></a></li>
+                                    </ul>
+                                </div>
+-->
+                                <div class="gallery_btn">
+                                    <button class="gb_icon1 play"><span class="ir_pm">Play</span></button>
+                                    <button class="gb_icon2 pause"><span class="ir_pm">Pause</span></button>
+                                    <button class="gb_icon3 prev"><span class="ir_pm">prev</span></button>
+                                    <button class="gb_icon4 next"><span class="ir_pm">next</span></button>
+                                </div>
+                                
+                                <div class="gallery_img">
+<!--
+                                    <ul>
+                                        <li><a href="#"><img src="img/gallery01.jpg" alt="갤러리1"></a></li>
+                                        <li><a href="#"><img src="img/gallery02.jpg" alt="갤러리2"></a></li>
+                                        <li><a href="#"><img src="img/gallery03.jpg" alt="갤러리3"></a></li>
+                                        <li><a href="#"><img src="img/gallery04.jpg" alt="갤러리4"></a></li>
+                                        <li><a href="#"><img src="img/gallery05.jpg" alt="갤러리5"></a></li>
+                                    </ul>
+-->
+                                    <div><a href="#"><img src="img/gallery01.jpg" alt="갤러리1"></a></div>
+                                    <div><a href="#"><img src="img/gallery02.jpg" alt="갤러리2"></a></div>
+                                    <div><a href="#"><img src="img/gallery03.jpg" alt="갤러리3"></a></div>
+                                    <div><a href="#"><img src="img/gallery04.jpg" alt="갤러리4"></a></div>
+                                    <div><a href="#"><img src="img/gallery05.jpg" alt="갤러리5"></a></div>
+                                </div>
+                            </div>
+                            <!-- //갤러리 -->
+                        </div>
+                        <!-- //col6 -->
+                    </div>
+                </div>
+            </div>
+            <!-- //cont_cont -->
+        </div>
+        <!-- //contents -->
+        
+        <div id="footer" role="footer">
+            <div class="container">
+                <h2 class="ir_su">푸터 영역</h2>
+                <div class="footer">
+                    <ul>
+                        <li><a href="#">사이트 도움말</a></li>
+                        <li><a href="#">사이트 이용약관</a></li>
+                        <li><a href="#">사이트 운영규칙</a></li>
+                        <li><a href="#"><strong>개인정보취급방침</strong></a></li>
+                        <li><a href="#">책임의 한계와 법적고지</a></li>
+                        <li><a href="#">게시중단요청 서비스</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                    <address>
+                        Copyright&copy;webstoryboy.co.kr All Right Reserved
+                    </address>
+                    <div class="w3c">
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="올바른 CSS입니다!" />
+                        </a>
+                        <a href="http://validator.w3.org/check?uri=referer">
+                            <img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+    
+    <!--layer popup -->
+    <div id="layer">
+        <img src="img/webstandard1.jpg" alt="웹표준">
+        <a href="#" class="close">Close</a>
+    </div>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script>
+        //윈도우 팝업
+        $(".window").click(function(e){
+            e.preventDefault();
+            //window.open("파일명", "팝업이름", "옵션설정");
+            //옵션 : left, top, width, height, status, toolbor, location, menubar, scrollbars, fullscreen, channelmode
+            window.open('sample_popup.html', 'popup01', 'width=800, height=590, left=50, top=50, scrollbars=0, toolbar=0, menubar=no');
+        });
+        
+        //레이어 팝업
+        $(".layer").click(function(e){
+            e.preventDefault();
+            $("#layer").css("display","block");
+            // $("#modal").show();
+            // $("#modal").fadeIn();
+            // $("#modal").slideDown();
+        });
+        $("#layer .close").click(function(e){
+            e.preventDefault();
+            $("#layer").css("display","none");
+            // $("#modal").hide();
+            // $("#modal").fadeOut();
+            // $("#modal").slideUp();
+        });
+        
+        //탭 메뉴
+		var $tab_list = $('.tab_menu');
+        
+		$tab_list.find('ul ul').hide();
+		$tab_list.find('li.active>ul').show();
+
+        function tabMenu(e){
+            e.preventDefault();
+			var $this = $(this);
+            $this.next('ul').show().parent('li').addClass('active').siblings('li').removeClass('active').find('>ul').hide();
+		}
+		$tab_list.find('>ul>li>a').click(tabMenu).focus(tabMenu);
+             
+        //배너
+        $('.ban').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: true
+        });
+        
+        //갤러리
+        $('.gallery_img').slick({
+            dots: true,
+            fade: true,
+            pauseOnHover: true,
+            arrows: false,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            speed: 300,
+            slidesToShow: 1
+        });
+        
+        $('.pause').on('click', function(){
+            $('.gallery_img').slick('slickPause');
+        });
+
+        $('.play').on('click', function(){
+            $('.gallery_img').slick('slickPlay');
+        });
+        
+        $('.prev').on('click', function(){
+            $('.gallery_img').slick('slickPrev');
+        });
+        
+        $('.next').on('click', function(){
+            $('.gallery_img').slick('slickNext');
+        });
+        
+        //전체 메뉴
+        $(".tit .btn").click(function(){
+            //$("#cont_nav").css("display","block");
+            //$("#cont_nav").show();
+            //$("#cont_nav").fadeIn();
+            //$("#cont_nav").slideDown();
+            //$("#cont_nav").toggle();
+            //$("#cont_nav").fadeToggle();
+            $("#cont_nav").slideToggle();
+            $(this).toggleClass("on");
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
