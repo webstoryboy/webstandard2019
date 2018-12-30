@@ -38,6 +38,7 @@
     <li><a href="http://wtss.tistory.com/200">33. 웹 표준 사이트 만들기(2019) - 레이어 팝업</a></li>
     <li><a href="http://wtss.tistory.com/201">34. 웹 표준 사이트 만들기(2019) - 윈도우 팝업</a></li>
     <li><a href="http://wtss.tistory.com/202">35. 웹 표준 사이트 만들기(2019) - 라이트 박스</a></li>
+    <li><a href="http://wtss.tistory.com/203">36. 웹 표준 사이트 만들기(2019) - 마무리</a></li>
 </ul>
 
 
@@ -78,4 +79,5 @@
     <li><a href="https://webstoryboy.github.io/webstandard2019/sample200_33.html">33. 웹 표준 사이트 만들기(2019)</a></li>
     <li><a href="https://webstoryboy.github.io/webstandard2019/sample201_34.html">34. 웹 표준 사이트 만들기(2019)</a></li>
     <li><a href="https://webstoryboy.github.io/webstandard2019/sample202_35.html">35. 웹 표준 사이트 만들기(2019)</a></li>
+    <li><a href="https://webstoryboy.github.io/webstandard2019/sample203_36.html">35. 웹 표준 사이트 만들기(2019)</a></li>
 </ul>
