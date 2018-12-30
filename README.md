@@ -31,6 +31,13 @@
     <li><a href="http://wtss.tistory.com/193">26. 웹 표준 사이트 만들기(2019) - 로그인</a></li>
     <li><a href="http://wtss.tistory.com/194">27. 웹 표준 사이트 만들기(2019) - 팝업</a></li>
     <li><a href="http://wtss.tistory.com/195">28. 웹 표준 사이트 만들기(2019) - 푸터 &amp; W3C</a></li>
+    <li><a href="http://wtss.tistory.com/196">29. 웹 표준 사이트 만들기(2019) - 전체메뉴 스크립트</a></li>
+    <li><a href="http://wtss.tistory.com/197">30. 웹 표준 사이트 만들기(2019) - 배너 스크립트</a></li>
+    <li><a href="http://wtss.tistory.com/198">31. 웹 표준 사이트 만들기(2019) - 탭메뉴 스크립트</a></li>
+    <li><a href="http://wtss.tistory.com/199">32. 웹 표준 사이트 만들기(2019) - 갤러리 스크립트</a></li>
+    <li><a href="http://wtss.tistory.com/200">33. 웹 표준 사이트 만들기(2019) - 레이어 팝업</a></li>
+    <li><a href="http://wtss.tistory.com/201">34. 웹 표준 사이트 만들기(2019) - 윈도우 팝업</a></li>
+    <li><a href="http://wtss.tistory.com/202">35. 웹 표준 사이트 만들기(2019) - 라이트 박스</a></li>
 </ul>
 
 
@@ -64,4 +71,11 @@
     <li><a href="https://webstoryboy.github.io/webstandard2019/sample193_26.html">26. 웹 표준 사이트 만들기(2019)</a></li>
     <li><a href="https://webstoryboy.github.io/webstandard2019/sample194_27.html">27. 웹 표준 사이트 만들기(2019)</a></li>
     <li><a href="https://webstoryboy.github.io/webstandard2019/sample195_28.html">28. 웹 표준 사이트 만들기(2019)</a></li>
+    <li><a href="https://webstoryboy.github.io/webstandard2019/sample196_29.html">29. 웹 표준 사이트 만들기(2019)</a></li>
+    <li><a href="https://webstoryboy.github.io/webstandard2019/sample197_30.html">30. 웹 표준 사이트 만들기(2019)</a></li>
+    <li><a href="https://webstoryboy.github.io/webstandard2019/sample198_31.html">31. 웹 표준 사이트 만들기(2019)</a></li>
+    <li><a href="https://webstoryboy.github.io/webstandard2019/sample199_32.html">32. 웹 표준 사이트 만들기(2019)</a></li>
+    <li><a href="https://webstoryboy.github.io/webstandard2019/sample200_33.html">33. 웹 표준 사이트 만들기(2019)</a></li>
+    <li><a href="https://webstoryboy.github.io/webstandard2019/sample201_34.html">34. 웹 표준 사이트 만들기(2019)</a></li>
+    <li><a href="https://webstoryboy.github.io/webstandard2019/sample202_35.html">35. 웹 표준 사이트 만들기(2019)</a></li>
 </ul>
