@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/* 여백 초기화 */
+body,div,ul,li,dl,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,
+th,td,tr,textarea,button,form{margin: 0; padding: 0;}
+
+/* a 링크 초기화 */
+a {color: #222; text-decoration: none;}
+a:hover {color: #390;}
+
+/* 폰트 초기화 */
+body, input, textarea, select, button, table {
+    font-family:'Nanum Gothic',AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif;
+    color: #222; font-size: 13px; line-height: 1.5;}
+
+/* 폰트 스타일 초기화 */
+em,address {font-style: normal;}
+
+/* 블릿기호 초기화 */
+dl,ul,li,ol,menu {list-style: none;}
+
+/* 제목 태그 초기화 */
+h1,h2,h3,h4,h5,h6 {font-size: 13px; color:#222; font-weight: normal;}
+
+/* 테두리 초기화 */
+img,fieldset {border:0 none;}
+
+/* 버튼 초기화 */
+button {border:0;}
+
+/* IR 효과 */
+.ir_pm {display: block; overflow: hidden; font-size: 0; line-height: 0; text-indent: -9999px;} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우 */
+.ir_wa {display: block; overflow: hidden; position: relative; z-index: -1; width: 100%; height: 100%;} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고하 할 때 */
+.ir_su {overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;} /* 대체 텍스트가 아니 접근성을 위한 숨김 텍스트를 제공할 때 */
+
+/* margin, padding */
+.mt10 {margin-top: 10px !important;}
+.mt15 {margin-top: 15px !important;}
+.mt20 {margin-top: 20px !important;}
+.mt25 {margin-top: 25px !important;}
+.mt30 {margin-top: 30px !important;}
+.mt35 {margin-top: 35px !important;}
+.mt40 {margin-top: 40px !important;}
+.mt45 {margin-top: 45px !important;}
+.mt50 {margin-top: 50px !important;}
+
+
+
+
+
+
+
+
+
+
+
+
+

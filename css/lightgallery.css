@@ -37,7 +37,7 @@
   outline: none;
 }
 .lg-actions .lg-next.disabled, .lg-actions .lg-prev.disabled {
-  pointer-events: none;
+/*  pointer-events: none;*/
   opacity: 0.5;
 }
 .lg-actions .lg-next:hover, .lg-actions .lg-prev:hover {
@@ -531,14 +531,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 #lg-zoom-out {
   opacity: 0.5;
-  pointer-events: none;
+/*  pointer-events: none;*/
 }
 #lg-zoom-out:after {
   content: "\e312";
 }
 .lg-zoomed #lg-zoom-out {
   opacity: 1;
-  pointer-events: auto;
+/*  pointer-events: auto;*/
 }
 
 .lg-outer .lg-pager-outer {
