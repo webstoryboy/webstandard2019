@@ -42,7 +42,7 @@
         /* 테두리 초기화 */
         img,fieldset {border:0 none;}
         
-        /* 버튼 초기확 */
+        /* 버튼 초기화 */
         button {border: 0;}
         
         /* IR 효과 */
@@ -731,7 +731,8 @@
         });
 
         //전체 메뉴
-        $(".tit .btn").click(function(){
+        $(".tit .btn").click(function(e){
+            e.preventDefault();
             //$("#cont_nav").css("display","block");
             //$("#cont_nav").show();
             //$("#cont_nav").fadeIn();
