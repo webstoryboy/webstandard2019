@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    
+    
+    
+<div id="codr-wrap">
+    <div id="codr-cont" class="coy">
+        <div id="tab-tit">
+            <ul>
+                <li id="tab1"><a href="#" class="active">index.html</a></li>
+                <li id="tab2"><a href="#">style.css</a></li>
+                <li id="tab3"><a href="#">reset.css</a></li>
+                <li id="tab4"><a href="#">최종 소스</a></li>
+            </ul>
+        </div>
+        <div id="tab-cont">
+            <!-- tab1 -->
+            <div>
+<pre class="line-numbers language-html"><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="author" content="webstoryboy"&gt;
+    &lt;meta name="description" content="웹 표준을 준수한 사이트 예제입니다."&gt;
+    &lt;meta name="keywords" content="웹표준, 웹접근성, 샘플사이트"&gt;
+    &lt;meta name="generator" content="brackets"&gt;
+    &lt;title&gt;WEBSTANDARD SITE&lt;/title&gt;
+    
+    &lt;!-- style --&gt;
+    &lt;link rel="stylesheet" type="text/css" href="css/reset.css"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;
+    
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- 스킵 내비게이션 --&gt;
+    &lt;div id="skip"&gt;
+        &lt;a rel="bookmark" href="#cont_nav"&gt;전체 메뉴 바로가기&lt;/a&gt;
+        &lt;a rel="bookmark" href="#cont_ban"&gt;배너 영역 바로가기&lt;/a&gt;
+        &lt;a rel="bookmark" href="#cont_cont"&gt;컨텐츠 영역 바로가기&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;!-- //스킵 내비게이션 --&gt;
+    
+    &lt;div id="wrap"&gt;
+        &lt;div id="header" role="header"&gt;
+            &lt;div class="container"&gt;header&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- //header --&gt;
+        
+        &lt;div id="contents"&gt;
+            &lt;div id="cont_nav" role="nav"&gt;
+                &lt;div class="container"&gt;cont_nav&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //cont_nav --&gt;
+            &lt;div id="cont_tit" role="title"&gt;
+                &lt;div class="container"&gt;cont_tit&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //cont_tit --&gt;
+            &lt;div id="cont_ban" role="banner"&gt;
+                &lt;div class="container"&gt;cont_ban&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //cont_ban --&gt;
+            &lt;div id="cont_cont" role="content"&gt;
+                &lt;div class="container"&gt;cont_cont&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //cont_cont --&gt;
+        &lt;/div&gt;
+        &lt;!-- //contents --&gt;
+        
+        &lt;div id="footer" role="footer"&gt;
+            &lt;div class="container"&gt;footer&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- //footer --&gt;
+    &lt;/div&gt;
+    &lt;!-- //wrap --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+            </div>
+            
+            <!-- tab2 -->
+            <div>
+<pre class="line-numbers language-html"><code>&lt;style&gt;
+/* 스킵 내비게이션 */
+#skip {position: relative;}
+#skip a {position: absolute; left: 0px; top: -35px; width: 140px; border:1px solid #fff; color: #fff; text-align: center; background: #333; line-height: 30px;}
+#skip a:active, 
+#skip a:focus {top: 0;}
+
+/* 레이아웃 */
+#wrap {width: 100%; }
+#header {width: 100%; height: 325px; background: #111; }
+#contents {width: 100%; height: 800px; background: #222;}
+#footer {width: 100%; height: 200px; background: #111;}
+
+/* 컨텐츠 레이아웃 */
+#cont_nav {width: 100%; height: 200px; background: #333;}
+#cont_tit {width: 100%; height: 200px; background: #444;}
+#cont_ban {width: 100%; height: 200px; background: #555;}
+#cont_cont {width: 100%; height: 200px; background: #666;}
+
+/* 컨테이너 */
+.container {width: 990px; margin: 0 auto; height: inherit; background: rgba(255,255,255,0.3);}
+&lt;/style&gt;
+</code></pre>
+            </div>
+            
+            <!-- tab3 -->
+            <div>
+<pre class="line-numbers language-html"><code>&lt;style&gt;
+/* 여백 초기화 */   
+body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,
+legend,p,select,table,th,td,tr,textarea,button,form{margin:0;padding:0;}
+
+/* a 링크 초기화 */
+a {color: #222; text-decoration: none;}
+a:hover {color: #390;}
+
+/* 폰트 초기화 */
+body, input, textarea, select, button, table {
+    font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; 
+    color: #222; font-size: 13px; line-height: 1.5;}
+&lt;/style&gt;
+</code></pre>
+            </div>
+            
+            <!-- tab4 -->
+            <div>
+<pre class="line-numbers language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="author" content="webstoryboy"&gt;
+    &lt;meta name="description" content="웹 표준을 준수한 사이트 예제입니다."&gt;
+    &lt;meta name="keywords" content="웹표준, 웹접근성, 샘플사이트"&gt;
+    &lt;meta name="generator" content="brackets"&gt;
+    &lt;title&gt;WEBSTANDARD SITE&lt;/title&gt;
+    
+    &lt;style&gt;
+        /* 여백 초기화 */   
+        body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,
+        legend,p,select,table,th,td,tr,textarea,button,form{margin:0;padding:0;}
+        
+        /* a 링크 초기화 */
+        a {color: #222; text-decoration: none;}
+        a:hover {color: #390;}
+
+        /* 폰트 초기화 */
+        body, input, textarea, select, button, table {
+            font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; 
+            color: #222; font-size: 13px; line-height: 1.5;}
+    &lt;/style&gt;
+    &lt;style&gt;
+        /* 스킵 내비게이션 */
+        #skip {position: relative;}
+        #skip a {position: absolute; left: 0px; top: -35px; width: 140px; border:1px solid #fff; color: #fff; text-align: center; background: #333; line-height: 30px;}
+        #skip a:active, 
+        #skip a:focus {top: 0;}
+        
+        /* 레이아웃 */
+        #wrap {width: 100%; }
+        #header {width: 100%; height: 325px; background: #111; }
+        #contents {width: 100%; height: 800px; background: #222;}
+        #footer {width: 100%; height: 200px; background: #111;}
+        
+        /* 컨텐츠 레이아웃 */
+        #cont_nav {width: 100%; height: 200px; background: #333;}
+        #cont_tit {width: 100%; height: 200px; background: #444;}
+        #cont_ban {width: 100%; height: 200px; background: #555;}
+        #cont_cont {width: 100%; height: 200px; background: #666;}
+
+        /* 컨테이너 */
+        .container {width: 990px; margin: 0 auto; height: inherit; background: rgba(255,255,255,0.3);}
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- 스킵 내비게이션 --&gt;
+    &lt;div id="skip"&gt;
+        &lt;a rel="bookmark" href="#cont_nav"&gt;전체 메뉴 바로가기&lt;/a&gt;
+        &lt;a rel="bookmark" href="#cont_ban"&gt;배너 영역 바로가기&lt;/a&gt;
+        &lt;a rel="bookmark" href="#cont_cont"&gt;컨텐츠 영역 바로가기&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;!-- //스킵 내비게이션 --&gt;
+    
+    &lt;div id="wrap"&gt;
+        &lt;div id="header" role="header"&gt;
+            &lt;div class="container"&gt;header&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- //header --&gt;
+        
+        &lt;div id="contents"&gt;
+            &lt;div id="cont_nav" role="nav"&gt;
+                &lt;div class="container"&gt;cont_nav&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //cont_nav --&gt;
+            &lt;div id="cont_tit" role="title"&gt;
+                &lt;div class="container"&gt;cont_tit&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //cont_tit --&gt;
+            &lt;div id="cont_ban" role="banner"&gt;
+                &lt;div class="container"&gt;cont_ban&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //cont_ban --&gt;
+            &lt;div id="cont_cont" role="content"&gt;
+                &lt;div class="container"&gt;cont_cont&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //cont_cont --&gt;
+        &lt;/div&gt;
+        &lt;!-- //contents --&gt;
+        
+        &lt;div id="footer" role="footer"&gt;
+            &lt;div class="container"&gt;footer&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- //footer --&gt;
+    &lt;/div&gt;
+    &lt;!-- //wrap --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>                
+            </div>
+        </div>
+    </div>
+    <!-- // codr-cont-->
+    
+    <div id="codr-right">
+        <div class="yout">
+            <iframe width="400" height="225" src="https://www.youtube.com/embed/Wwfi5kJ0xAI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+        </div>
+   
+        <div id="tab-tit2">
+            <a href="#" class="youtbtn"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            <ul>
+                <li><a href="#" class="active"><i class="fa fa-clipboard" aria-hidden="true"></i> 소개</a></li>
+                <li><a href="#"><i class="fa fa-diamond" aria-hidden="true"></i> 메뉴</a></li>
+                <li><a href="#"><i class="fa fa-pie-chart" aria-hidden="true"></i> 참고</a></li>
+            </ul>
+        </div>
+        <div id="tab-cont2">
+            
+            <div id="tab-nav2">
+                <h5 class="tit">웹 표준 사이트 만들기(2019) - 스킵 메뉴</h5>
+                <p class="txt">웹 표준 사이트를 만들기 위한 스킵 메뉴입니다. 웹 접근성을 위한 스킵 메뉴에 대해서 알아봅니다.</p>
+                
+                <h5>완성</h5>
+                <div class="title">
+                    <a href="https://webstoryboy.github.io/webstandard2019/sample177_10.html" target="_blank"><i class="fa fa-file-code-o" aria-hidden="true"></i> 완성 샘플 보기</a><br />
+                    <a href="https://github.com/webstoryboy/webstandard2019" target="_blank"><i class="fa fa-file-code-o" aria-hidden="true"></i> 완성 소스 다운 받기</a>
+                </div>
+                
+                <h5>광고</h5>
+                <div class="ad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- webstoryboy main -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-5913874937139786"
+     data-ad-slot="3764840331"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+				</div>
+            </div>
+            
+            <div id="tab-nav">
+                <!-- 메뉴 나오는 곳 -->
+            </div>
+            
+            <div id="tab-nav3">
+                <h5>레퍼런스 사이트</h5>
+                <div>
+                    <span><a href="https://webzz.tistory.com/221">HTML REFERENCE</a></span>
+                    <span><a href="https://webzz.tistory.com/353">CSS REFERENCE</a></span>
+                    <span><a href="https://webzz.tistory.com/16">JAVASCRIPT REFERENCE</a></span>
+                    <span><a href="https://webzz.tistory.com/25">JQUERY REFERENCE</a></span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- //codr-right-->
+</div>
+
+
+
+
+</body>
+</html>

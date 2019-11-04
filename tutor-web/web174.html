@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    
+    
+    
+<div id="codr-wrap">
+    <div id="codr-cont" class="coy">
+        <div id="tab-tit">
+            <ul>
+                <li id="tab1"><a href="#" class="active">완성 소스</a></li>
+                <li id="tab2"><a href="#">index.html</a></li>
+                <li id="tab3"><a href="#">style.css</a></li>
+            </ul>
+        </div>
+        <div id="tab-cont">
+            <div>
+<pre class="line-numbers language-html"><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Layout07&lt;/title&gt;
+    &lt;style&gt;
+        /* 리셋 */
+        * {margin: 0; padding: 0;}
+        
+        /* 전체 레이아웃 */
+        #wrap {font-size: 20px; color: #fff; text-align: center;}
+        #header {height: 140px;}
+        #banner {height: 450px; line-height: 450px; background: #4dd0e1;}
+        #contents {height: 950px;}
+        #footer {height: 220px;}
+        
+        /* 레이아웃 */
+        #header-top {height: 70px; line-height: 70px; background: #b2ebf2;}
+        #header-nav {height: 70px; line-height: 70px; background: #80deea;}
+        #content1 {height: 90px; line-height: 90px; background-color: #26c6da;}
+        #content2 {height: 480px; line-height: 480px; background-color: #00bcd4;}
+        #content3 {height: 380px; line-height: 380px; background-color: #00acc1;}
+        #footer-nav {height: 60px; line-height: 60px; background-color: #0097a7;}
+        #footer-info {height: 160px; line-height: 160px; background-color: #00838f;}
+        
+        /* 컨테이너 */
+        .container {width: 1100px; margin: 0 auto; height: inherit; background: rgba(255,255,255,0.3);}
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="wrap"&gt;
+        &lt;div id="header"&gt;
+            &lt;div id="header-top"&gt;
+                &lt;div class="container"&gt;header-top&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div id="header-nav"&gt;
+                &lt;div class="container"&gt;header-nav&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- //header --&gt;
+        
+        &lt;div id="banner"&gt;
+            &lt;div class="container"&gt;banner&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- //banner --&gt;
+        
+        &lt;div id="contents"&gt;
+            &lt;div id="content1"&gt;
+                &lt;div class="container"&gt;content1&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div id="content2"&gt;
+                &lt;div class="container"&gt;content2&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div id="content3"&gt;
+                &lt;div class="container"&gt;content3&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- //contents --&gt;
+        
+        &lt;div id="footer"&gt;
+            &lt;div id="footer-nav"&gt;
+                &lt;div class="container"&gt;footer-nav&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div id="footer-info"&gt;
+                &lt;div class="container"&gt;footer-info&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- //footer --&gt;
+    &lt;/div&gt;
+    &lt;!-- //wrap --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+
+</code></pre>
+            </div>
+            
+            <div>
+<pre class="line-numbers language-html"><code>&lt;div id="wrap"&gt;
+    &lt;div id="header"&gt;
+        &lt;div id="header-top"&gt;
+            &lt;div class="container"&gt;header-top&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id="header-nav"&gt;
+            &lt;div class="container"&gt;header-nav&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- //header --&gt;
+
+    &lt;div id="banner"&gt;
+        &lt;div class="container"&gt;banner&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- //banner --&gt;
+
+    &lt;div id="contents"&gt;
+        &lt;div id="content1"&gt;
+            &lt;div class="container"&gt;content1&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id="content2"&gt;
+            &lt;div class="container"&gt;content2&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id="content3"&gt;
+            &lt;div class="container"&gt;content3&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- //contents --&gt;
+
+    &lt;div id="footer"&gt;
+        &lt;div id="footer-nav"&gt;
+            &lt;div class="container"&gt;footer-nav&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id="footer-info"&gt;
+            &lt;div class="container"&gt;footer-info&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- //footer --&gt;
+&lt;/div&gt;
+&lt;!-- //wrap --&gt;
+</code></pre>
+            </div>
+            <div>
+<pre class="line-numbers language-html"><code>&lt;style&gt;
+    /* 리셋 */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 전체 레이아웃 */
+    #wrap {
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+    }
+
+    #header {
+        height: 140px;
+    }
+
+    #banner {
+        height: 450px;
+        line-height: 450px;
+        background: #4dd0e1;
+    }
+
+    #contents {
+        height: 950px;
+    }
+
+    #footer {
+        height: 220px;
+    }
+
+    /* 레이아웃 */
+    #header-top {
+        height: 70px;
+        line-height: 70px;
+        background: #b2ebf2;
+    }
+
+    #header-nav {
+        height: 70px;
+        line-height: 70px;
+        background: #80deea;
+    }
+
+    #content1 {
+        height: 90px;
+        line-height: 90px;
+        background-color: #26c6da;
+    }
+
+    #content2 {
+        height: 480px;
+        line-height: 480px;
+        background-color: #00bcd4;
+    }
+
+    #content3 {
+        height: 380px;
+        line-height: 380px;
+        background-color: #00acc1;
+    }
+
+    #footer-nav {
+        height: 60px;
+        line-height: 60px;
+        background-color: #0097a7;
+    }
+
+    #footer-info {
+        height: 160px;
+        line-height: 160px;
+        background-color: #00838f;
+    }
+
+    /* 컨테이너 */
+    .container {
+        width: 1100px;
+        margin: 0 auto;
+        height: inherit;
+        background: rgba(255, 255, 255, 0.3);
+    }
+&lt;/style&gt;
+</code></pre>
+            </div>
+            
+        </div>
+    </div>
+    <!-- // codr-cont-->
+    
+    <div id="codr-right">
+        <div class="yout">
+            <iframe width="400" height="225" src="https://www.youtube.com/embed/Wwfi5kJ0xAI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+        </div>
+   
+        <div id="tab-tit2">
+            <a href="#" class="youtbtn"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            <ul>
+                <li><a href="#" class="active"><i class="fa fa-clipboard" aria-hidden="true"></i> 소개</a></li>
+                <li><a href="#"><i class="fa fa-diamond" aria-hidden="true"></i> 메뉴</a></li>
+                <li><a href="#"><i class="fa fa-pie-chart" aria-hidden="true"></i> 참고</a></li>
+            </ul>
+        </div>
+        <div id="tab-cont2">
+            
+            <div id="tab-nav2">
+                <h5 class="tit">웹 표준 사이트 만들기(2019) - layout07</h5>
+                <p class="txt">웹 표준 사이트를 만들기 위한 기본 레이아웃 유형7 입니다.</p>
+                
+                <h5>완성</h5>
+                <div class="title">
+                    <a href="https://webstoryboy.github.io/webstandard2019/sample174.html" target="_blank"><i class="fa fa-file-code-o" aria-hidden="true"></i> 완성 샘플 보기</a><br />
+                    <a href="https://github.com/webstoryboy/webstandard2019" target="_blank"><i class="fa fa-file-code-o" aria-hidden="true"></i> 완성 소스 다운 받기</a>
+                </div>
+                
+                <h5>광고</h5>
+                <div class="ad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- webstoryboy main -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-5913874937139786"
+     data-ad-slot="3764840331"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+				</div>
+            </div>
+            
+            <div id="tab-nav">
+                <!-- 메뉴 나오는 곳 -->
+            </div>
+            
+            <div id="tab-nav3">
+                <h5>레퍼런스 사이트</h5>
+                <div>
+                    <span><a href="https://webzz.tistory.com/221">HTML REFERENCE</a></span>
+                    <span><a href="https://webzz.tistory.com/353">CSS REFERENCE</a></span>
+                    <span><a href="https://webzz.tistory.com/16">JAVASCRIPT REFERENCE</a></span>
+                    <span><a href="https://webzz.tistory.com/25">JQUERY REFERENCE</a></span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- //codr-right-->
+</div>
+
+
+
+
+</body>
+</html>

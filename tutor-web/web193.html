@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    
+    
+
+    
+<div id="codr-wrap">
+    <div id="codr-cont" class="coy">
+        <div id="tab-tit">
+            <ul>
+                <li id="tab1"><a href="#" class="active">index.html</a></li>
+                <li id="tab2"><a href="#">style.css</a></li>
+                <li id="tab3"><a href="#">reset.css</a></li>
+                <li id="tab4"><a href="#">최종 소스</a></li>
+            </ul>
+        </div>
+        <div id="tab-cont">
+            <!-- tab1 -->
+            <div>
+<pre class="line-numbers language-html"><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="author" content="webstoryboy"&gt;
+    &lt;meta name="description" content="웹 표준을 준수한 사이트 예제입니다."&gt;
+    &lt;meta name="keywords" content="웹표준, 웹접근성, 샘플사이트"&gt;
+    &lt;meta name="generator" content="brackets"&gt;
+    &lt;title&gt;WEBSTANDARD SITE&lt;/title&gt;
+    
+    &lt;!-- style --&gt;
+    &lt;link rel="stylesheet" type="text/css" href="css/reset.css"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;
+    
+    &lt;!-- 웹 폰트 --&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet"&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- 스킵 내비게이션 --&gt;
+    &lt;div id="skip"&gt;
+        &lt;a rel="bookmark" href="#cont_nav"&gt;전체 메뉴 바로가기&lt;/a&gt;
+        &lt;a rel="bookmark" href="#cont_ban"&gt;배너 영역 바로가기&lt;/a&gt;
+        &lt;a rel="bookmark" href="#cont_cont"&gt;컨텐츠 영역 바로가기&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;!-- //스킵 내비게이션 --&gt;
+    
+    &lt;div id="wrap"&gt;
+        &lt;div id="header" role="header"&gt;
+            &lt;div class="container"&gt;
+                &lt;div class="header"&gt;
+                    &lt;div class="header-menu"&gt;
+                        &lt;a href="https://wiss.tistory.com/"&gt;Desinger&lt;/a&gt;
+                        &lt;a href="https://webstoryboy.co.kr/"&gt;Publisher&lt;/a&gt;
+                        &lt;a href="https://www.youtube.com/channel/UCsvQSv7EeCMHyYb9ENKAJZw"&gt;Youtube&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;!-- //헤더 메뉴 --&gt;
+                    &lt;div class="header-tit"&gt;
+                        &lt;h1&gt;Professional Publisher &amp; Designer&lt;/h1&gt;&lt;br&gt;
+                        &lt;a href="https://webstoryboy.co.kr/"&gt;webstoryboy.co.kr&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;!-- //헤더 타이틀 --&gt;
+                    &lt;div class="header-icon"&gt;
+                        &lt;a href="#" class="icon1"&gt;&lt;span class="ir_pm"&gt;icon1&lt;/span&gt;&lt;/a&gt;
+                        &lt;a href="#" class="icon2"&gt;&lt;span class="ir_pm"&gt;icon2&lt;/span&gt;&lt;/a&gt;
+                        &lt;a href="#" class="icon3"&gt;&lt;span class="ir_pm"&gt;icon3&lt;/span&gt;&lt;/a&gt;
+                        &lt;a href="#" class="icon4"&gt;&lt;span class="ir_pm"&gt;icon4&lt;/span&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;!-- //헤더 아이콘 --&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- //header --&gt;
+        
+        &lt;div id="contents"&gt;
+            &lt;div id="cont_nav"&gt;
+                &lt;div class="container"&gt;
+                    &lt;h2 class="ir_su"&gt;전체 메뉴&lt;/h2&gt;
+                    &lt;div class="nav"&gt;
+                        &lt;div&gt;
+                            &lt;h3&gt;HTML Reference&lt;/h3&gt;
+                            &lt;ol&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;HTML 태그(Tag)&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;블록 요소/인라인 요소&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;DTD 선언&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;언어 속성 설정&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;HTML &lt;title&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;HTML &lt;meta&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;특수문자&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;하이퍼 링크&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;HTML &lt;style&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;HTML &lt;html&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;HTML &lt;head&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;HTML &lt;div&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;HTML &lt;colgroup&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;HTML &lt;caption&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ol&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;h3&gt;CSS Reference&lt;/h3&gt;
+                            &lt;ol&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;CSS 선택자&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;CSS 단위&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;CSS 색상&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;CSS 선언 방법&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;상대주소와 절대주소&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;CSS float&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;이미지 표현 방법&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;이미지 스프라이트&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;IR 효과&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;이미지 최적화&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;background-color&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;border-style&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;font-size&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;text-align&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ol&gt;
+                        &lt;/div&gt;
+                        &lt;div class="last"&gt;
+                            &lt;h3&gt;Webstandard&lt;/h3&gt;
+                            &lt;ol&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;웹 표준&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;웹 접근성&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;W3C&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;웹 접근성 연구소&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;네이버 널리&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;다음 다룸&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;Webstandard&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ol&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //cont_nav --&gt;
+            
+            &lt;div id="cont_tit"&gt;
+                &lt;div class="container"&gt;
+                    &lt;div class="tit"&gt;
+                        &lt;h2&gt;&ldquo;나는 퍼블리셔다!&rdquo;&lt;/h2&gt;
+                        &lt;a href="#" class="btn"&gt;&lt;span class="ir_pm"&gt;전체메뉴&lt;/span&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //cont_tit --&gt;
+            
+            &lt;div id="cont_ban"&gt;
+                &lt;div class="container"&gt;
+                    &lt;div class="ban"&gt;
+                        &lt;a href="#" class="prev"&gt;&lt;span class="ir_pm"&gt;이전 이미지&lt;/span&gt;&lt;/a&gt;
+                        &lt;ul&gt;
+                            &lt;li class="ban_img1"&gt;&lt;a href="#"&gt;&lt;img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class="ban_img2"&gt;&lt;a href="#"&gt;&lt;img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class="ban_img3"&gt;&lt;a href="#"&gt;&lt;img src="img/banner_link3.jpg" alt="로그인 폼 만들기"&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;a href="#" class="next"&gt;&lt;span class="ir_pm"&gt;다음 이미지&lt;/span&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //cont_ban --&gt;
+            
+            &lt;div id="cont_cont"&gt;
+                &lt;div class="container"&gt;
+                    &lt;div class="cont"&gt;
+                        &lt;div class="column col1"&gt;
+                            &lt;h3&gt;&lt;span class="ico_img ir_pm"&gt;아이콘1&lt;/span&gt;&lt;em class="ico_tit"&gt;Notice&lt;/em&gt;&lt;/h3&gt;
+                            &lt;p class="ico_desc"&gt;가장 웹 페이지에서 기본이 되는 게시판 유형입니다.&lt;/p&gt;
+                            &lt;!-- 게시판 --&gt;
+                            &lt;div class="notice"&gt;
+                                &lt;h4&gt;웹 퍼블리셔 면접 질문&lt;/h4&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;display:inline과 display:block의 차이점은 무엇인가요?&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;HTML 태그 중에 dl,dd,ul,ol,li의 차이점이 무엇인가요?&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;HTML 태그 중에 strong과 em 태그의 차이점은 무엇인가요?&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;컨텐츠 요소를 가운데로 오게 하는 방법을 알려주세요!&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;독타입을 선언하는 이유에 대해서 설명하세요.&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                                &lt;a href="#" class="more ir_pm" title="더보기"&gt;더보기&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;!-- //게시판 --&gt;
+                            
+                            &lt;!-- 게시판 유형2 --&gt;
+                            &lt;div class="notice2"&gt;
+                                &lt;h4&gt;웹 디자이너 면접 질문&lt;/h4&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;JPG, PNG, GIF의 차이점이 무엇인가요?&lt;/a&gt;&lt;span&gt;2018.11.16&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;UI 디자인과 UX 디자인의 차이점을 설명하세요.&lt;/a&gt;&lt;span&gt;2018.11.16&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;인터랙션 디자인의 핵심은 무엇이라고 생각하나요?&lt;/a&gt;&lt;span&gt;2018.11.16&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;포트폴리오를 하면서 가장 잘 했다고 생각하는 부분은 무엇인가요?&lt;/a&gt;&lt;span&gt;2018.11.16&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;웹 디자인과 모바일 디자인의 차이가 무엇이라고 생각하나요?&lt;/a&gt;&lt;span&gt;2018.11.16&lt;/span&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                                &lt;a href="#" class="more ir_pm" title="더보기"&gt;더보기&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;!-- //게시판 유형2 --&gt;
+                        &lt;/div&gt;
+                        &lt;!-- //col1 --&gt;
+                        &lt;div class="column col2"&gt;
+                            &lt;h3&gt;&lt;span class="ico_img ir_pm"&gt;아이콘2&lt;/span&gt;&lt;em class="ico_tit"&gt;Notice&lt;/em&gt;&lt;/h3&gt;
+                            &lt;p class="ico_desc"&gt;가장 웹 페이지에서 기본이 되는 게시판 유형입니다.&lt;/p&gt;
+                            &lt;!-- 게시판 유형3 --&gt;
+                            &lt;div class="notice3"&gt;
+                                &lt;h4&gt;HTML Reference&lt;/h4&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;
+                                        &lt;a href="#"&gt;
+                                            &lt;img src="img/notice01.jpg" alt="이미지1"&gt;
+                                            &lt;strong&gt;[HTML] &lt;table&gt;&lt;/strong&gt;
+                                            &lt;span&gt;&lt;table&gt; 태그는 표를 만들 때 사용합니다.&lt;/span&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                        &lt;a href="#"&gt;
+                                            &lt;img src="img/notice02.jpg" alt="이미지2"&gt;
+                                            &lt;strong&gt;[HTML] &lt;div&gt;&lt;/strong&gt;
+                                            &lt;span&gt;&lt;div&gt; 태그는 문서의 섹션을 만들거나 영역을 나눌 때 사용합니다.&lt;/span&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                        &lt;a href="#"&gt;
+                                            &lt;img src="img/notice03.jpg" alt="이미지3"&gt;
+                                            &lt;strong&gt;[HTML] &lt;dl&gt;&lt;/strong&gt;
+                                            &lt;span&gt;&lt;dl&gt; 태그는 용어를 설명하는 목록형 태그입니다.&lt;/span&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                        &lt;a href="#"&gt;
+                                            &lt;img src="img/notice04.jpg" alt="이미지4"&gt;
+                                            &lt;strong&gt;[HTML] &lt;em&gt;&lt;/strong&gt;
+                                            &lt;span&gt;&lt;em&gt; 태그는 텍스트를 강조할 때 사용합니다.&lt;/span&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                                &lt;a href="#" class="more ir_pm" title="더보기"&gt;더보기&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;!-- //게시판 유형3 --&gt;
+                        &lt;/div&gt;
+                        &lt;!-- //col2 --&gt;
+                        &lt;div class="column col3"&gt;
+                            &lt;h3&gt;&lt;span class="ico_img ir_pm"&gt;아이콘3&lt;/span&gt;&lt;em class="ico_tit"&gt;Notice&lt;/em&gt;&lt;/h3&gt;
+                            &lt;p class="ico_desc"&gt;가장 웹 페이지에서 기본이 되는 게시판 유형입니다.&lt;/p&gt;
+                            &lt;!-- 로그인 --&gt;
+                            &lt;div id="login-wrap"&gt;
+                                &lt;h4 class="ir_su"&gt;로그인 정보&lt;/h4&gt;
+                                &lt;form id="login_form" name="login_form" method="post"&gt;
+                                    &lt;fieldset&gt;
+                                        &lt;legend class="ir_su"&gt;로그인 및 관련 설정&lt;/legend&gt;
+                                        &lt;div class="login_header"&gt;
+                                            &lt;h5 class="ir_su"&gt;로그인 보안&lt;/h5&gt;
+                                            &lt;div class="lh_check"&gt;
+                                                &lt;input id="infor_check" type="checkbox" class="input_check"&gt;
+                                                &lt;label for="infor_check"&gt;로그인 상태 유지&lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="lh_ip"&gt;
+                                                IP보안 &lt;em&gt;ON&lt;/em&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="login_content"&gt;
+                                            &lt;h5 class="ir_su"&gt;로그인 영역&lt;/h5&gt;
+                                            &lt;div class="lc_text"&gt;
+                                                &lt;label for="uid" class="ir_su"&gt;아이디&lt;/label&gt;
+                                                &lt;input type="text" id="uid" name="uid" class="input_text" maxlength="20"&gt;
+                                                &lt;label for="upw" class="ir_su"&gt;비밀번호&lt;/label&gt;
+                                                &lt;input type="password" id="upw" name="upw" class="input_text" maxlength="20"&gt;
+                                            &lt;/div&gt;
+                                            &lt;button class="lc_btn" type="submit"&gt;로그인&lt;/button&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="loing_footer"&gt;
+                                            &lt;h5 class="ir_su"&gt;로그인 문제해결&lt;/h5&gt;
+                                            &lt;ul&gt;
+                                                &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;회원가입&lt;/strong&gt;&lt;/a&gt; /&lt;/li&gt;
+                                                &lt;li&gt;&lt;a href="#"&gt;아이디&lt;/a&gt;&middot;&lt;a href="#"&gt;비밀번호 찾기&lt;/a&gt;&lt;/li&gt;
+                                            &lt;/ul&gt;
+                                        &lt;/div&gt;
+                                    &lt;/fieldset&gt;
+                                &lt;/form&gt;
+                            &lt;/div&gt;
+                            &lt;!-- //로그인 --&gt;
+                        &lt;/div&gt;
+                        &lt;!-- //col3 --&gt;
+                        &lt;div class="column col4"&gt;
+                            &lt;h3&gt;&lt;span class="ico_img ir_pm"&gt;아이콘4&lt;/span&gt;&lt;em class="ico_tit"&gt;Notice&lt;/em&gt;&lt;/h3&gt;
+                            &lt;p class="ico_desc"&gt;가장 웹 페이지에서 기본이 되는 게시판 유형입니다.&lt;/p&gt;
+                            &lt;!-- 오버효과 --&gt;
+                            &lt;div class="notice_hover"&gt;
+                                &lt;h4&gt;Mouse Hover&lt;/h4&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;
+                                        &lt;a href="#"&gt;
+                                            &lt;span&gt;&lt;img src="img/sban01.jpg" alt="이미지1"&gt;&lt;em&gt;바로가기&lt;/em&gt;&lt;/span&gt;
+                                            &lt;strong&gt;와이어 프레임&lt;/strong&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                        &lt;a href="#"&gt;
+                                            &lt;span&gt;&lt;img src="img/sban02.jpg" alt="이미지2"&gt;&lt;em&gt;바로가기&lt;/em&gt;&lt;/span&gt;
+                                            &lt;strong&gt;스케치 작업&lt;/strong&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class="last"&gt;
+                                        &lt;a href="#"&gt;
+                                            &lt;span&gt;&lt;img src="img/sban03.jpg" alt="이미지3"&gt;&lt;em&gt;바로가기&lt;/em&gt;&lt;/span&gt;
+                                            &lt;strong&gt;UI 디자인&lt;/strong&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+                            &lt;!-- //오버효과 --&gt;
+                            &lt;!-- 오버효과2 --&gt;
+                            &lt;div class="notice_hover2 mt15"&gt;
+                                &lt;h4 class="ir_su"&gt;Mouse Hover2&lt;/h4&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;
+                                        &lt;a href="#"&gt;
+                                            &lt;span&gt;&lt;img src="img/sban04.jpg" alt="이미지1"&gt;&lt;em&gt;바로가기&lt;/em&gt;&lt;/span&gt;
+                                            &lt;strong&gt;HTML&lt;/strong&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                        &lt;a href="#"&gt;
+                                            &lt;span&gt;&lt;img src="img/sban05.jpg" alt="이미지2"&gt;&lt;em&gt;바로가기&lt;/em&gt;&lt;/span&gt;
+                                            &lt;strong&gt;CSS&lt;/strong&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class="last"&gt;
+                                        &lt;a href="#"&gt;
+                                            &lt;span&gt;&lt;img src="img/sban06.jpg" alt="이미지3"&gt;&lt;em&gt;바로가기&lt;/em&gt;&lt;/span&gt;
+                                            &lt;strong&gt;jQuery&lt;/strong&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+                            &lt;!-- //오버효과2 --&gt;
+                        &lt;/div&gt;
+                        &lt;!-- //col4 --&gt;
+                        &lt;div class="column col5"&gt;
+                            &lt;h3&gt;&lt;span class="ico_img ir_pm"&gt;아이콘5&lt;/span&gt;&lt;em class="ico_tit"&gt;Notice&lt;/em&gt;&lt;/h3&gt;
+                            &lt;p class="ico_desc"&gt;가장 웹 페이지에서 기본이 되는 게시판 유형입니다.&lt;/p&gt;
+                            &lt;!-- 탭 메뉴 --&gt;
+                            &lt;div class="tab_menu"&gt;
+                                &lt;h4 class="ir_su"&gt;탭 메뉴&lt;/h4&gt;
+                                &lt;ul&gt;
+                                    &lt;li class="active"&gt;&lt;a href="#"&gt;공지사항1&lt;/a&gt;
+                                        &lt;ul&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;첫 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;첫 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;첫 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;공지사항2&lt;/a&gt;
+                                        &lt;ul style="display: none"&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;두 번째 공지사항 탭메뉴 테스트 목록입니다.&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;두 번째 공지사항 탭메뉴 테스트 목록입니다.&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;두 번째 공지사항 탭메뉴 테스트 목록입니다.&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;공지사항3&lt;/a&gt;
+                                        &lt;ul style="display: none"&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;세 번째 공지사항 탭메뉴 테스트 목록입니다.&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;세 번째 공지사항 탭메뉴 테스트 목록입니다.&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;세 번째 공지사항 탭메뉴 테스트 목록입니다.&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+                            &lt;!-- //탭 메뉴 --&gt;
+                            &lt;!-- 게시판 유형4 --&gt;
+                            &lt;div class="notice4 mt15"&gt;
+                                &lt;h4&gt;최신 &lt;em&gt;공지사항&lt;/em&gt;&lt;/h4&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;웹 디자이너와 웹 퍼블리셔의 차이점은 무엇인가요?&lt;/a&gt;&lt;span&gt;2018.11.19&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;웹 디자이너와 웹 퍼블리셔의 차이점은 무엇인가요?&lt;/a&gt;&lt;span&gt;2018.11.19&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;웹 디자이너와 웹 퍼블리셔의 차이점은 무엇인가요?&lt;/a&gt;&lt;span&gt;2018.11.19&lt;/span&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                                &lt;a href="#" class="more" title="더보기"&gt;더보기&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;!-- //게시판 유형4 --&gt;
+                        &lt;/div&gt;
+                        &lt;!-- //col5 --&gt;
+                        &lt;div class="column col6"&gt;
+                            &lt;h3&gt;&lt;span class="ico_img ir_pm"&gt;아이콘6&lt;/span&gt;&lt;em class="ico_tit"&gt;Notice&lt;/em&gt;&lt;/h3&gt;
+                            &lt;p class="ico_desc"&gt;가장 웹 페이지에서 기본이 되는 게시판 유형입니다.&lt;/p&gt;
+                            &lt;!-- 갤러리 --&gt;
+                            &lt;div class="gallery"&gt;
+                                &lt;h4&gt;포트폴리오&lt;/h4&gt;
+                                &lt;div class="gallery_btn"&gt;
+                                    &lt;ul&gt;
+                                        &lt;li class="gb_icon1"&gt;&lt;a href="#"&gt;&lt;span class="ir_pm"&gt;시작&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li class="gb_icon2"&gt;&lt;a href="#"&gt;&lt;span class="ir_pm"&gt;정지&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li class="gb_icon3"&gt;&lt;a href="#"&gt;&lt;span class="ir_pm"&gt;이전이미지&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li class="gb_icon4"&gt;&lt;a href="#"&gt;&lt;span class="ir_pm"&gt;다음이미지&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/div&gt;
+                                &lt;div class="gallery_img"&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href="#"&gt;&lt;img src="img/gallery01.jpg" alt="갤러리1"&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="#"&gt;&lt;img src="img/gallery02.jpg" alt="갤러리2"&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="#"&gt;&lt;img src="img/gallery03.jpg" alt="갤러리3"&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="#"&gt;&lt;img src="img/gallery04.jpg" alt="갤러리4"&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="#"&gt;&lt;img src="img/gallery05.jpg" alt="갤러리5"&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;!-- //갤러리 --&gt;
+                        &lt;/div&gt;
+                        &lt;!-- //col6 --&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //cont_cont --&gt;
+        &lt;/div&gt;
+        &lt;!-- //contents --&gt;
+        
+        &lt;div id="footer" role="footer"&gt;
+            &lt;div class="container"&gt;footer&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- //footer --&gt;
+    &lt;/div&gt;
+    &lt;!-- //wrap --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+
+
+
+
+
+
+</code></pre>
+            </div>
+            
+            <!-- tab2 -->
+            <div>
+<pre class="line-numbers language-html"><code>&lt;style&gt;
+ /* 스킵 내비게이션 */
+#skip {position: relative;}
+#skip a {position: absolute; left: 0px; top: -35px; width: 140px; border:1px solid #fff; color: #fff; text-align: center; background: #333; line-height: 30px;}
+#skip a:active, 
+#skip a:focus {top: 0;}
+
+/* 레이아웃 */
+#wrap {width: 100%; }
+#header {width: 100%; height: 325px; background: url(img/header_bg.jpg) center top repeat-x;}
+#contents {}
+#footer {width: 100%; height: 200px; background: #111;}
+
+/* 컨텐츠 레이아웃 */
+#cont_nav {background-color: #f6fdff;}
+#cont_tit {background-color: #EAF7FD; background: rgba(154, 216, 244, 0.2); /* ie9부터 적용*/}
+#cont_ban {background-color: #dceff7;}
+#cont_cont {background-color: #f6fdff;}
+/* 컨테이너 */
+.container {width: 990px; margin: 0 auto; height: inherit; /*background: rgba(255,255,255,0.3);*/}
+
+/* 헤더 */
+.header .header-menu {text-align: right; }
+.header .header-menu a {color: #fff; padding: 10px 0px 10px 13px; display: inline-block;}
+.header .header-menu a:hover {color: #666;}
+.header .header-tit {text-align: center; }
+.header .header-tit h1 {color: #fff; background-color: #4aa8d4; display: inline-block; font-size: 28px; padding: 5px 20px 6px 20px; margin-top: 40px; font-weight: normal; text-transform: uppercase;}
+.header .header-tit a {display: inline-block; background-color: #2698cb; font-size: 18px; color:#fff; padding: 5px 20px 6px 20px; margin-top: -5px;}
+.header .header-icon {text-align: center; margin-top: 30px;} 
+.header .header-icon a {width: 60px; height: 60px; display: inline-block; background: url(img/icon.png); margin: 0 3px;}
+.header .header-icon a.icon1 {background-position: 0px 0px;}
+.header .header-icon a.icon2 {background-position: 0px -60px;}
+.header .header-icon a.icon3 {background-position: 0px -120px;}
+.header .header-icon a.icon4 {background-position: 0px -180px;}
+.header .header-icon a:hover.icon1 {background-position: -60px 0px;}
+.header .header-icon a:hover.icon2 {background-position: -60px -60px;}
+.header .header-icon a:hover.icon3 {background-position: -60px -120px;}
+.header .header-icon a:hover.icon4 {background-position: -60px -180px;}
+
+/* 전체 메뉴 */
+.nav {overflow: hidden; padding: 20px 0;}
+.nav &gt; div {float: left; width: 40%;} 
+.nav &gt; div:last-child {width: 20%;} /* ie9부터 사용가능 */
+.nav &gt; div.last {width: 20%;}
+.nav &gt; div h3 {font-size: 18px; color:#25a2d0; margin-bottom: 4px;}
+.nav &gt; div ol {overflow: hidden; }
+.nav &gt; div ol li {float: left; width: 50%; padding-bottom: 2px; }
+.nav &gt; div.last ol li {width: 100%;}
+.nav &gt; div ol li a:hover {text-decoration: underline;}
+
+/* 타이틀 */
+.tit {position: relative; text-align: center}
+.tit h2 {font-size: 40px; color:#2c94c4; letter-spacing: 2px; padding: 5px 0; font-family: 'Nanum Brush Script', cursive;}
+.tit .btn {display: block; width: 60px; height: 60px; background: url(img/icon.png) no-repeat 0 -600px; position: absolute; right: 0; top: 5px;}
+
+/* 배너 */
+.ban {position: relative; padding: 24px 0 20px;}
+.ban a.prev {position: absolute; left: -70px; top: 60px; width: 43px; height: 43px; background: url(img/icon.png) -150px 0}
+.ban a.next {position: absolute; right: -70px; top: 60px; width: 43px; height: 43px; background: url(img/icon.png) -150px -43px}
+.ban a.prev:hover {background-position: -193px 0;}
+.ban a.next:hover {background-position: -193px -43px;}
+.ban ul {overflow: hidden;}
+.ban ul li {float: left; width: 330px;}
+.ban ul li:nth-child(2) {text-align: center;} /* ie9부터 적용 */
+.ban ul li:last-child {text-align: right;} /* ie9부터 적용 */
+.ban ul li.ban_img1 {text-align: left;}
+.ban ul li.ban_img2 {text-align: center;}
+.ban ul li.ban_img3 {text-align: right;}
+.ban ul li img {border: 4px solid #dcdcdc;}
+.ban ul li img:hover {border-color: #98bcdc;}
+
+/* 컨텐츠 박스 요소 width = padding + margin + border */
+.cont {overflow: hidden; padding-top: 30px;}
+.cont .column {position: relative; float: left; width: 289px; height: 363px; margin: 0 30px 30px 0; padding-right: 30px;}
+.cont .col1 {border-right: 1px solid #c8c8c8;}
+.cont .col2 {border-right: 1px solid #c8c8c8;}
+.cont .col3 {margin-right: 0; padding-right: 0;}
+.cont .col4 {border-right: 1px solid #c8c8c8;}
+.cont .col5 {border-right: 1px solid #c8c8c8;}
+.cont .col6 {margin-right: 0; padding-right: 0;}
+.cont .column .ico_img {display: block; width: 60px; height: 60px; background: url(img/icon.png); position: absolute; left: 0; top: 0;}
+.cont .column .ico_tit {padding-left: 70px; font-size: 16px; color: #2c94c4; font-weight: bold;}
+.cont .column .ico_desc {padding-left: 70px; border-bottom: 1px solid #d0d0d0; padding-bottom: 15px; margin-bottom: 15px;}
+.cont .col1 .ico_img {background-position: 0px -240px;}
+.cont .col2 .ico_img {background-position: 0px -300px;}
+.cont .col3 .ico_img {background-position: 0px -360px;}
+.cont .col4 .ico_img {background-position: 0px -420px;}
+.cont .col5 .ico_img {background-position: 0px -480px;}
+.cont .col6 .ico_img {background-position: 0px -540px;}
+.cont .col1 .ico_img:hover {background-position: -60px -240px;}
+.cont .col2 .ico_img:hover {background-position: -60px -300px;}
+.cont .col3 .ico_img:hover {background-position: -60px -360px;}
+.cont .col4 .ico_img:hover {background-position: -60px -420px;}
+.cont .col5 .ico_img:hover {background-position: -60px -480px;}
+.cont .col6 .ico_img:hover {background-position: -60px -540px;}
+
+/* 게시판 */
+.notice {position: relative;}
+.notice h4 {font-size: 14px; color: #0093bd; padding-bottom: 3px; font-weight: 700;}
+.notice ul li {overflow: hidden; text-overflow: ellipsis; white-space: nowrap; background: url(img/dot.gif) no-repeat 0 9px; padding-left: 10px;}
+.notice ul li a {font-size: 12px;}
+.notice a.more {position: absolute; right: 0; top: 0; display: block; background: url(img/icon.png) -150px -90px; width: 17px; height: 17px;}
+.notice a.more:hover {background-position: -167px -90px;}
+
+/* 게시판2 */
+.notice2 {position: relative; margin-top: 20px;}
+.notice2 h4 {font-size: 14px; color: #0093bd; padding-bottom: 3px; font-weight: 700;}
+.notice2 li {overflow: hidden; background: url(img/dot.gif) no-repeat 0 9px; padding-left: 10px;}
+.notice2 li a {float: left; width: 60%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; }
+.notice2 li span {float: right; width: 30%; text-align: right; font-size: 12px;}
+.notice2 a.more {position: absolute; right: 0; top: 0; display: block; background: url(img/icon.png) -150px -90px; width: 17px; height: 17px;}
+.notice2 a.more:hover {background-position: -167px -90px;}
+
+/* 게시판3 */
+.notice3 {position: relative;}
+.notice3 h4 {font-size: 14px; color: #0093bd; padding-bottom: 4px; font-weight: 700;}
+.notice3 li {position: relative; padding: 8px 0 14px 60px;}
+.notice3 li a img {position: absolute; left: 0; top: 0; width: 50px; border: 1px solid #0093bd;}
+.notice3 li a strong {display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.notice3 li a span {display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px;}
+.notice3 a.more {position: absolute; right: 0; top: 0; display: block; background: url(../img/icon.png) -150px -90px; width: 17px; height: 17px;}
+.notice3 a.more:hover {background-position: -167px -90px;}
+
+/* 마우스 오버효과1 */
+.notice_hover h4 {font-size: 14px; color: #0093bd; padding-bottom: 4px; font-weight: 700;}
+.notice_hover ul {overflow: hidden;}
+.notice_hover li {float: left; width: 93px; margin-right: 5px; text-align: center;}
+.notice_hover li:last-child {margin-right: 0;} /* ie9부터 적용 */
+.notice_hover li.last {margin-right: 0;} /* 모든 브라우저 버전 적용 */
+.notice_hover li a span {position: relative; display: block; width: 93px; height: 93px; line-height: 93px;}
+.notice_hover li a span img {width: 93px; }
+.notice_hover li a span em {visibility: hidden; position: absolute; left: 0; top: 0; background: rgba(0,0,0,0.7); color:#fff; width: 100%; height: 100%; text-align: center;} /* rgba ie9부터 적용 */
+.notice_hover li a span:hover em {visibility: visible;}
+.notice_hover li a strong {padding-top: 3px; display: inline-block; font-size: 12px;}
+
+/* 마우스 오버효과2 */
+.notice_hover2 ul {overflow: hidden; }
+.notice_hover2 li {float: left; width: 93px; text-align: center; margin-right: 5px;}
+.notice_hover2 li.last {margin-right: 0;}
+.notice_hover2 li a span {position: relative; display: block; width: 93px; height: 93px;}
+.notice_hover2 li a span img {width: 93px;}
+.notice_hover2 li a span em {visibility: hidden; position: absolute; left: 0; bottom: 0; background: rgba(0,0,0,0.7); color: #fff; width: 100%;}
+.notice_hover2 li a strong {padding-top: 3px; display: inline-block;}
+.notice_hover2 li a span:hover em {visibility: visible;}
+
+/* 탭 메뉴 */
+.tab_menu {position: relative; border: 1px solid #ccc; padding: 8px; height: 105px;}
+.tab_menu ul {overflow: hidden; border-bottom: 1px solid #ccc; }
+.tab_menu ul li {float: left; border: 1px solid #ccc; margin-right: -1px; margin-bottom: -1px; }
+.tab_menu ul li a {padding: 5px 10px; display: block;}
+.tab_menu ul li ul {position: absolute; left: 0; top: 48px; border: 0; width: 270px; }
+.tab_menu ul li ul li {float: none; border: 0; padding-left: 18px; background: url(img/dot.gif) no-repeat 9px 8px;}
+.tab_menu ul li ul li a {padding: 0 0 3px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%;}
+.tab_menu ul li.active {background: #2c94c4;}
+.tab_menu ul li.active a {color: #fff;}
+.tab_menu ul li.active ul li a {color: #333;}
+
+/* 게시판4 */
+.notice4 {position: relative; border: 1px solid #ccc;}
+.notice4 h4 {font-size: 14px; color: #0093bd; border-bottom: 1px solid #ccc; font-weight: 700; padding: 8px 10px;}
+.notice4 h4 em {color: #cf3292;}
+.notice4 ul {padding: 10px;}
+.notice4 li {overflow: hidden; background: url(img/dot.gif) no-repeat 0px 8px; padding-left: 8px; padding-bottom: 2px; }
+.notice4 li a {float: left; width: 60%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.notice4 li span {float: right; width: 30%; text-align: right;}
+.notice4 a.more {position: absolute; right: 9px; top: 9px;}
+
+/* 갤러리 */
+.gallery {position: relative; border: 1px solid #ccc; height: 254px; overflow: hidden;}
+.gallery h4 {font-size: 14px; color: #0093bd; border-bottom: 1px solid #ccc; padding: 10px 0 8px 11px; font-weight: bold;}
+.gallery .gallery_btn {position: absolute; right: 5px; top: 7px;}
+.gallery .gallery_btn ul {overflow: hidden;}
+.gallery .gallery_btn li {float: left; margin: 1px 2px;}
+.gallery .gallery_btn li a {display: block; width: 23px; height: 23px; background: url(img/icon.png) no-repeat;}
+.gallery .gallery_btn li.gb_icon1 a {background-position: -150px -120px}
+.gallery .gallery_btn li.gb_icon2 a {background-position: -150px -143px}
+.gallery .gallery_btn li.gb_icon3 a {background-position: -150px -166px}
+.gallery .gallery_btn li.gb_icon4 a {background-position: -150px -189px}
+.gallery .gallery_btn li.gb_icon1 a:hover {background-position: -173px -120px}
+.gallery .gallery_btn li.gb_icon2 a:hover {background-position: -173px -143px}
+.gallery .gallery_btn li.gb_icon3 a:hover {background-position: -173px -166px}
+.gallery .gallery_btn li.gb_icon4 a:hover {background-position: -173px -189px}
+.gallery .gallery_img img {width: 100%;}
+
+/* 로그인 */
+#login-wrap {margin-bottom: 15px; padding: 15px; background: #f2f4f5;}
+.login_header {overflow: hidden; font-size: 12px; height: 30px;}
+.login_header .lh_check {float: left; padding-right: 15px;}
+.login_header .lh_check .input_check {vertical-align: -2px;}
+.login_header .lh_ip {float: left;}
+.login_header .lh_ip em {color: #0093bd; text-decoration: underline;}
+.login_content {position: relative;}
+.login_content .lc_btn {position:absolute; right: 0; top: 0; width: 62px; height: 47px; background: #fff; border: 1px solid #bebebe;}
+.login_content .input_text {width: 180px; height: 16px; padding: 2px 5px;border: 1px solid #bebebe; margin-bottom: 3px; background: #fff;}
+.loing_footer {margin-top: 5px;}
+.loing_footer li {display: inline;}
+.loing_footer li a {font-size: 12px;}
+&lt;/style&gt;
+
+
+
+
+
+</code></pre>
+            </div>
+            
+            <!-- tab3 -->
+            <div>
+<pre class="line-numbers language-html"><code>&lt;style&gt;
+/* 여백 초기화 */   
+body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,th,td,tr,textarea,button,form{margin:0;padding:0;}
+
+/* a 링크 초기화 */
+a {color: #222; text-decoration: none;}
+a:hover {color: #390;}
+/* 폰트 초기화 */
+body, input, textarea, select, button, table {
+    font-family: 'Nanum Gothic', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #222; font-size: 13px; line-height: 1.5;}
+
+/* 폰트 스타일 초기화 */
+em {font-style: normal;}
+/* 블릿기호 초기화 */
+de,ul,li,ol,menu {list-style:none;}
+
+/* 제목 태그 초기화 */
+h1,h2,h3,h4,h5,h6 {font-size: 13px; font-weight: normal;}
+
+/* 테두리 초기화 */
+img,fieldset {border:0 none;}
+
+/* IR 효과 */
+.ir_pm {display:block; overflow:hidden; font-size:0; line-height:0; text-indent:-9999px;} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
+.ir_wa {display:block; overflow:hidden; position:relative; z-index:-1; width:100%; height: 100%;} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
+.ir_su {overflow: hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px;} /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+
+/* margin, padding */
+.mt10 {margin-top: 10px !important;}
+.mt15 {margin-top: 15px !important;}
+.mt20 {margin-top: 20px !important;}
+.mt25 {margin-top: 25px !important;}
+.mt30 {margin-top: 30px !important;}
+.mt35 {margin-top: 35px !important;}
+.mt40 {margin-top: 40px !important;}
+.mt45 {margin-top: 45px !important;}
+.mt50 {margin-top: 50px !important;}
+&lt;/style&gt;
+
+
+
+
+
+</code></pre>
+            </div>
+            
+            <!-- tab4 -->
+            <div>
+<pre class="line-numbers language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="author" content="webstoryboy"&gt;
+    &lt;meta name="description" content="웹 표준을 준수한 사이트 예제입니다."&gt;
+    &lt;meta name="keywords" content="웹표준, 웹접근성, 샘플사이트"&gt;
+    &lt;meta name="generator" content="brackets"&gt;
+    &lt;title&gt;WEBSTANDARD SITE&lt;/title&gt;
+    
+    &lt;!-- 웹 폰트 --&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet"&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet"&gt;
+    
+    &lt;style&gt;
+        /* 여백 초기화 */   
+        body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,th,td,tr,textarea,button,form{margin:0;padding:0;}
+        
+        /* a 링크 초기화 */
+        a {color: #222; text-decoration: none;}
+        a:hover {color: #390;}
+        /* 폰트 초기화 */
+        body, input, textarea, select, button, table {
+            font-family: 'Nanum Gothic', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #222; font-size: 13px; line-height: 1.5;}
+        
+        /* 폰트 스타일 초기화 */
+        em {font-style: normal;}
+        /* 블릿기호 초기화 */
+        de,ul,li,ol,menu {list-style:none;}
+        
+        /* 제목 태그 초기화 */
+        h1,h2,h3,h4,h5,h6 {font-size: 13px; font-weight: normal;}
+        
+        /* 테두리 초기화 */
+        img,fieldset {border:0 none;}
+        
+        /* IR 효과 */
+        .ir_pm {display:block; overflow:hidden; font-size:0; line-height:0; text-indent:-9999px;} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
+        .ir_wa {display:block; overflow:hidden; position:relative; z-index:-1; width:100%; height: 100%;} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
+        .ir_su {overflow: hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px;} /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+    
+        /* margin, padding */
+        .mt10 {margin-top: 10px !important;}
+        .mt15 {margin-top: 15px !important;}
+        .mt20 {margin-top: 20px !important;}
+        .mt25 {margin-top: 25px !important;}
+        .mt30 {margin-top: 30px !important;}
+        .mt35 {margin-top: 35px !important;}
+        .mt40 {margin-top: 40px !important;}
+        .mt45 {margin-top: 45px !important;}
+        .mt50 {margin-top: 50px !important;}
+    &lt;/style&gt;
+    &lt;style&gt;
+        /* 스킵 내비게이션 */
+        #skip {position: relative;}
+        #skip a {position: absolute; left: 0px; top: -35px; width: 140px; border:1px solid #fff; color: #fff; text-align: center; background: #333; line-height: 30px;}
+        #skip a:active, 
+        #skip a:focus {top: 0;}
+        
+        /* 레이아웃 */
+        #wrap {width: 100%; }
+        #header {width: 100%; height: 325px; background: url(img/header_bg.jpg) center top repeat-x;}
+        #contents {}
+        #footer {width: 100%; height: 200px; background: #111;}
+        
+        /* 컨텐츠 레이아웃 */
+        #cont_nav {background-color: #f6fdff;}
+        #cont_tit {background-color: #EAF7FD; background: rgba(154, 216, 244, 0.2); /* ie9부터 적용*/}
+        #cont_ban {background-color: #dceff7;}
+        #cont_cont {background-color: #f6fdff;}
+        /* 컨테이너 */
+        .container {width: 990px; margin: 0 auto; height: inherit; /*background: rgba(255,255,255,0.3);*/}
+    
+        /* 헤더 */
+        .header .header-menu {text-align: right; }
+        .header .header-menu a {color: #fff; padding: 10px 0px 10px 13px; display: inline-block;}
+        .header .header-menu a:hover {color: #666;}
+        .header .header-tit {text-align: center; }
+        .header .header-tit h1 {color: #fff; background-color: #4aa8d4; display: inline-block; font-size: 28px; padding: 5px 20px 6px 20px; margin-top: 40px; font-weight: normal; text-transform: uppercase;}
+        .header .header-tit a {display: inline-block; background-color: #2698cb; font-size: 18px; color:#fff; padding: 5px 20px 6px 20px; margin-top: -5px;}
+        .header .header-icon {text-align: center; margin-top: 30px;} 
+        .header .header-icon a {width: 60px; height: 60px; display: inline-block; background: url(img/icon.png); margin: 0 3px;}
+        .header .header-icon a.icon1 {background-position: 0px 0px;}
+        .header .header-icon a.icon2 {background-position: 0px -60px;}
+        .header .header-icon a.icon3 {background-position: 0px -120px;}
+        .header .header-icon a.icon4 {background-position: 0px -180px;}
+        .header .header-icon a:hover.icon1 {background-position: -60px 0px;}
+        .header .header-icon a:hover.icon2 {background-position: -60px -60px;}
+        .header .header-icon a:hover.icon3 {background-position: -60px -120px;}
+        .header .header-icon a:hover.icon4 {background-position: -60px -180px;}
+        
+        /* 전체 메뉴 */
+        .nav {overflow: hidden; padding: 20px 0;}
+        .nav &gt; div {float: left; width: 40%;} 
+        .nav &gt; div:last-child {width: 20%;} /* ie9부터 사용가능 */
+        .nav &gt; div.last {width: 20%;}
+        .nav &gt; div h3 {font-size: 18px; color:#25a2d0; margin-bottom: 4px;}
+        .nav &gt; div ol {overflow: hidden; }
+        .nav &gt; div ol li {float: left; width: 50%; padding-bottom: 2px; }
+        .nav &gt; div.last ol li {width: 100%;}
+        .nav &gt; div ol li a:hover {text-decoration: underline;}
+        
+        /* 타이틀 */
+        .tit {position: relative; text-align: center}
+        .tit h2 {font-size: 40px; color:#2c94c4; letter-spacing: 2px; padding: 5px 0; font-family: 'Nanum Brush Script', cursive;}
+        .tit .btn {display: block; width: 60px; height: 60px; background: url(img/icon.png) no-repeat 0 -600px; position: absolute; right: 0; top: 5px;}
+        
+        /* 배너 */
+        .ban {position: relative; padding: 24px 0 20px;}
+        .ban a.prev {position: absolute; left: -70px; top: 60px; width: 43px; height: 43px; background: url(img/icon.png) -150px 0}
+        .ban a.next {position: absolute; right: -70px; top: 60px; width: 43px; height: 43px; background: url(img/icon.png) -150px -43px}
+        .ban a.prev:hover {background-position: -193px 0;}
+        .ban a.next:hover {background-position: -193px -43px;}
+        .ban ul {overflow: hidden;}
+        .ban ul li {float: left; width: 330px;}
+        .ban ul li:nth-child(2) {text-align: center;} /* ie9부터 적용 */
+        .ban ul li:last-child {text-align: right;} /* ie9부터 적용 */
+        .ban ul li.ban_img1 {text-align: left;}
+        .ban ul li.ban_img2 {text-align: center;}
+        .ban ul li.ban_img3 {text-align: right;}
+        .ban ul li img {border: 4px solid #dcdcdc;}
+        .ban ul li img:hover {border-color: #98bcdc;}
+         
+        /* 컨텐츠 박스 요소 width = padding + margin + border */
+        .cont {overflow: hidden; padding-top: 30px;}
+        .cont .column {position: relative; float: left; width: 289px; height: 363px; margin: 0 30px 30px 0; padding-right: 30px;}
+        .cont .col1 {border-right: 1px solid #c8c8c8;}
+        .cont .col2 {border-right: 1px solid #c8c8c8;}
+        .cont .col3 {margin-right: 0; padding-right: 0;}
+        .cont .col4 {border-right: 1px solid #c8c8c8;}
+        .cont .col5 {border-right: 1px solid #c8c8c8;}
+        .cont .col6 {margin-right: 0; padding-right: 0;}
+        .cont .column .ico_img {display: block; width: 60px; height: 60px; background: url(img/icon.png); position: absolute; left: 0; top: 0;}
+        .cont .column .ico_tit {padding-left: 70px; font-size: 16px; color: #2c94c4; font-weight: bold;}
+        .cont .column .ico_desc {padding-left: 70px; border-bottom: 1px solid #d0d0d0; padding-bottom: 15px; margin-bottom: 15px;}
+        .cont .col1 .ico_img {background-position: 0px -240px;}
+        .cont .col2 .ico_img {background-position: 0px -300px;}
+        .cont .col3 .ico_img {background-position: 0px -360px;}
+        .cont .col4 .ico_img {background-position: 0px -420px;}
+        .cont .col5 .ico_img {background-position: 0px -480px;}
+        .cont .col6 .ico_img {background-position: 0px -540px;}
+        .cont .col1 .ico_img:hover {background-position: -60px -240px;}
+        .cont .col2 .ico_img:hover {background-position: -60px -300px;}
+        .cont .col3 .ico_img:hover {background-position: -60px -360px;}
+        .cont .col4 .ico_img:hover {background-position: -60px -420px;}
+        .cont .col5 .ico_img:hover {background-position: -60px -480px;}
+        .cont .col6 .ico_img:hover {background-position: -60px -540px;}
+        
+        /* 게시판 */
+        .notice {position: relative;}
+        .notice h4 {font-size: 14px; color: #0093bd; padding-bottom: 3px; font-weight: 700;}
+        .notice ul li {overflow: hidden; text-overflow: ellipsis; white-space: nowrap; background: url(img/dot.gif) no-repeat 0 9px; padding-left: 10px;}
+        .notice ul li a {font-size: 12px;}
+        .notice a.more {position: absolute; right: 0; top: 0; display: block; background: url(img/icon.png) -150px -90px; width: 17px; height: 17px;}
+        .notice a.more:hover {background-position: -167px -90px;}
+        
+        /* 게시판2 */
+        .notice2 {position: relative; margin-top: 20px;}
+        .notice2 h4 {font-size: 14px; color: #0093bd; padding-bottom: 3px; font-weight: 700;}
+        .notice2 li {overflow: hidden; background: url(img/dot.gif) no-repeat 0 9px; padding-left: 10px;}
+        .notice2 li a {float: left; width: 60%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; }
+        .notice2 li span {float: right; width: 30%; text-align: right; font-size: 12px;}
+        .notice2 a.more {position: absolute; right: 0; top: 0; display: block; background: url(img/icon.png) -150px -90px; width: 17px; height: 17px;}
+        .notice2 a.more:hover {background-position: -167px -90px;}
+        
+        /* 게시판3 */
+        .notice3 {position: relative;}
+        .notice3 h4 {font-size: 14px; color: #0093bd; padding-bottom: 4px; font-weight: 700;}
+        .notice3 li {position: relative; padding: 8px 0 14px 60px;}
+        .notice3 li a img {position: absolute; left: 0; top: 0; width: 50px; border: 1px solid #0093bd;}
+        .notice3 li a strong {display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+        .notice3 li a span {display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px;}
+        .notice3 a.more {position: absolute; right: 0; top: 0; display: block; background: url(../img/icon.png) -150px -90px; width: 17px; height: 17px;}
+        .notice3 a.more:hover {background-position: -167px -90px;}
+        
+        /* 마우스 오버효과1 */
+        .notice_hover h4 {font-size: 14px; color: #0093bd; padding-bottom: 4px; font-weight: 700;}
+        .notice_hover ul {overflow: hidden;}
+        .notice_hover li {float: left; width: 93px; margin-right: 5px; text-align: center;}
+        .notice_hover li:last-child {margin-right: 0;} /* ie9부터 적용 */
+        .notice_hover li.last {margin-right: 0;} /* 모든 브라우저 버전 적용 */
+        .notice_hover li a span {position: relative; display: block; width: 93px; height: 93px; line-height: 93px;}
+        .notice_hover li a span img {width: 93px; }
+        .notice_hover li a span em {visibility: hidden; position: absolute; left: 0; top: 0; background: rgba(0,0,0,0.7); color:#fff; width: 100%; height: 100%; text-align: center;} /* rgba ie9부터 적용 */
+        .notice_hover li a span:hover em {visibility: visible;}
+        .notice_hover li a strong {padding-top: 3px; display: inline-block; font-size: 12px;}
+    
+        /* 마우스 오버효과2 */
+        .notice_hover2 ul {overflow: hidden; }
+        .notice_hover2 li {float: left; width: 93px; text-align: center; margin-right: 5px;}
+        .notice_hover2 li.last {margin-right: 0;}
+        .notice_hover2 li a span {position: relative; display: block; width: 93px; height: 93px;}
+        .notice_hover2 li a span img {width: 93px;}
+        .notice_hover2 li a span em {visibility: hidden; position: absolute; left: 0; bottom: 0; background: rgba(0,0,0,0.7); color: #fff; width: 100%;}
+        .notice_hover2 li a strong {padding-top: 3px; display: inline-block;}
+        .notice_hover2 li a span:hover em {visibility: visible;}
+        
+        /* 탭 메뉴 */
+        .tab_menu {position: relative; border: 1px solid #ccc; padding: 8px; height: 105px;}
+        .tab_menu ul {overflow: hidden; border-bottom: 1px solid #ccc; }
+        .tab_menu ul li {float: left; border: 1px solid #ccc; margin-right: -1px; margin-bottom: -1px; }
+        .tab_menu ul li a {padding: 5px 10px; display: block;}
+        .tab_menu ul li ul {position: absolute; left: 0; top: 48px; border: 0; width: 270px; }
+        .tab_menu ul li ul li {float: none; border: 0; padding-left: 18px; background: url(img/dot.gif) no-repeat 9px 8px;}
+        .tab_menu ul li ul li a {padding: 0 0 3px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%;}
+        .tab_menu ul li.active {background: #2c94c4;}
+        .tab_menu ul li.active a {color: #fff;}
+        .tab_menu ul li.active ul li a {color: #333;}
+        
+        /* 게시판4 */
+        .notice4 {position: relative; border: 1px solid #ccc;}
+        .notice4 h4 {font-size: 14px; color: #0093bd; border-bottom: 1px solid #ccc; font-weight: 700; padding: 8px 10px;}
+        .notice4 h4 em {color: #cf3292;}
+        .notice4 ul {padding: 10px;}
+        .notice4 li {overflow: hidden; background: url(img/dot.gif) no-repeat 0px 8px; padding-left: 8px; padding-bottom: 2px; }
+        .notice4 li a {float: left; width: 60%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+        .notice4 li span {float: right; width: 30%; text-align: right;}
+        .notice4 a.more {position: absolute; right: 9px; top: 9px;}
+        
+        /* 갤러리 */
+        .gallery {position: relative; border: 1px solid #ccc; height: 254px; overflow: hidden;}
+        .gallery h4 {font-size: 14px; color: #0093bd; border-bottom: 1px solid #ccc; padding: 10px 0 8px 11px; font-weight: bold;}
+        .gallery .gallery_btn {position: absolute; right: 5px; top: 7px;}
+        .gallery .gallery_btn ul {overflow: hidden;}
+        .gallery .gallery_btn li {float: left; margin: 1px 2px;}
+        .gallery .gallery_btn li a {display: block; width: 23px; height: 23px; background: url(img/icon.png) no-repeat;}
+        .gallery .gallery_btn li.gb_icon1 a {background-position: -150px -120px}
+        .gallery .gallery_btn li.gb_icon2 a {background-position: -150px -143px}
+        .gallery .gallery_btn li.gb_icon3 a {background-position: -150px -166px}
+        .gallery .gallery_btn li.gb_icon4 a {background-position: -150px -189px}
+        .gallery .gallery_btn li.gb_icon1 a:hover {background-position: -173px -120px}
+        .gallery .gallery_btn li.gb_icon2 a:hover {background-position: -173px -143px}
+        .gallery .gallery_btn li.gb_icon3 a:hover {background-position: -173px -166px}
+        .gallery .gallery_btn li.gb_icon4 a:hover {background-position: -173px -189px}
+        .gallery .gallery_img img {width: 100%;}
+        
+        /* 로그인 */
+        #login-wrap {margin-bottom: 15px; padding: 15px; background: #f2f4f5;}
+        .login_header {overflow: hidden; font-size: 12px; height: 30px;}
+        .login_header .lh_check {float: left; padding-right: 15px;}
+        .login_header .lh_check .input_check {vertical-align: -2px;}
+        .login_header .lh_ip {float: left;}
+        .login_header .lh_ip em {color: #0093bd; text-decoration: underline;}
+        .login_content {position: relative;}
+        .login_content .lc_btn {position:absolute; right: 0; top: 0; width: 62px; height: 47px; background: #fff; border: 1px solid #bebebe;}
+        .login_content .input_text {width: 180px; height: 16px; padding: 2px 5px;border: 1px solid #bebebe; margin-bottom: 3px; background: #fff;}
+        .loing_footer {margin-top: 5px;}
+        .loing_footer li {display: inline;}
+        .loing_footer li a {font-size: 12px;}
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- 스킵 내비게이션 --&gt;
+    &lt;div id="skip"&gt;
+        &lt;a rel="bookmark" href="#cont_nav"&gt;전체 메뉴 바로가기&lt;/a&gt;
+        &lt;a rel="bookmark" href="#cont_ban"&gt;배너 영역 바로가기&lt;/a&gt;
+        &lt;a rel="bookmark" href="#cont_cont"&gt;컨텐츠 영역 바로가기&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;!-- //스킵 내비게이션 --&gt;
+    
+    &lt;div id="wrap"&gt;
+        &lt;div id="header" role="header"&gt;
+            &lt;div class="container"&gt;
+                &lt;div class="header"&gt;
+                    &lt;div class="header-menu"&gt;
+                        &lt;a href="https://wiss.tistory.com/"&gt;Desinger&lt;/a&gt;
+                        &lt;a href="https://webstoryboy.co.kr/"&gt;Publisher&lt;/a&gt;
+                        &lt;a href="https://www.youtube.com/channel/UCsvQSv7EeCMHyYb9ENKAJZw"&gt;Youtube&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;!-- //헤더 메뉴 --&gt;
+                    &lt;div class="header-tit"&gt;
+                        &lt;h1&gt;Professional Publisher &amp; Designer&lt;/h1&gt;&lt;br&gt;
+                        &lt;a href="https://webstoryboy.co.kr/"&gt;webstoryboy.co.kr&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;!-- //헤더 타이틀 --&gt;
+                    &lt;div class="header-icon"&gt;
+                        &lt;a href="#" class="icon1"&gt;&lt;span class="ir_pm"&gt;icon1&lt;/span&gt;&lt;/a&gt;
+                        &lt;a href="#" class="icon2"&gt;&lt;span class="ir_pm"&gt;icon2&lt;/span&gt;&lt;/a&gt;
+                        &lt;a href="#" class="icon3"&gt;&lt;span class="ir_pm"&gt;icon3&lt;/span&gt;&lt;/a&gt;
+                        &lt;a href="#" class="icon4"&gt;&lt;span class="ir_pm"&gt;icon4&lt;/span&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;!-- //헤더 아이콘 --&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- //header --&gt;
+        
+        &lt;div id="contents"&gt;
+            &lt;div id="cont_nav"&gt;
+                &lt;div class="container"&gt;
+                    &lt;h2 class="ir_su"&gt;전체 메뉴&lt;/h2&gt;
+                    &lt;div class="nav"&gt;
+                        &lt;div&gt;
+                            &lt;h3&gt;HTML Reference&lt;/h3&gt;
+                            &lt;ol&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;HTML 태그(Tag)&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;블록 요소/인라인 요소&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;DTD 선언&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;언어 속성 설정&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;HTML &lt;title&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;HTML &lt;meta&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;특수문자&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;하이퍼 링크&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;HTML &lt;style&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;HTML &lt;html&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;HTML &lt;head&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;HTML &lt;div&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;HTML &lt;colgroup&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;HTML &lt;caption&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ol&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;h3&gt;CSS Reference&lt;/h3&gt;
+                            &lt;ol&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;CSS 선택자&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;CSS 단위&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;CSS 색상&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;CSS 선언 방법&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;상대주소와 절대주소&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;CSS float&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;이미지 표현 방법&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;이미지 스프라이트&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;IR 효과&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;이미지 최적화&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;background-color&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;border-style&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;font-size&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;text-align&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ol&gt;
+                        &lt;/div&gt;
+                        &lt;div class="last"&gt;
+                            &lt;h3&gt;Webstandard&lt;/h3&gt;
+                            &lt;ol&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;웹 표준&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;웹 접근성&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;W3C&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;웹 접근성 연구소&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;네이버 널리&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;다음 다룸&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;Webstandard&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ol&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //cont_nav --&gt;
+            
+            &lt;div id="cont_tit"&gt;
+                &lt;div class="container"&gt;
+                    &lt;div class="tit"&gt;
+                        &lt;h2&gt;&ldquo;나는 퍼블리셔다!&rdquo;&lt;/h2&gt;
+                        &lt;a href="#" class="btn"&gt;&lt;span class="ir_pm"&gt;전체메뉴&lt;/span&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //cont_tit --&gt;
+            
+            &lt;div id="cont_ban"&gt;
+                &lt;div class="container"&gt;
+                    &lt;div class="ban"&gt;
+                        &lt;a href="#" class="prev"&gt;&lt;span class="ir_pm"&gt;이전 이미지&lt;/span&gt;&lt;/a&gt;
+                        &lt;ul&gt;
+                            &lt;li class="ban_img1"&gt;&lt;a href="#"&gt;&lt;img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class="ban_img2"&gt;&lt;a href="#"&gt;&lt;img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class="ban_img3"&gt;&lt;a href="#"&gt;&lt;img src="img/banner_link3.jpg" alt="로그인 폼 만들기"&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;a href="#" class="next"&gt;&lt;span class="ir_pm"&gt;다음 이미지&lt;/span&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //cont_ban --&gt;
+            
+            &lt;div id="cont_cont"&gt;
+                &lt;div class="container"&gt;
+                    &lt;div class="cont"&gt;
+                        &lt;div class="column col1"&gt;
+                            &lt;h3&gt;&lt;span class="ico_img ir_pm"&gt;아이콘1&lt;/span&gt;&lt;em class="ico_tit"&gt;Notice&lt;/em&gt;&lt;/h3&gt;
+                            &lt;p class="ico_desc"&gt;가장 웹 페이지에서 기본이 되는 게시판 유형입니다.&lt;/p&gt;
+                            &lt;!-- 게시판 --&gt;
+                            &lt;div class="notice"&gt;
+                                &lt;h4&gt;웹 퍼블리셔 면접 질문&lt;/h4&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;display:inline과 display:block의 차이점은 무엇인가요?&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;HTML 태그 중에 dl,dd,ul,ol,li의 차이점이 무엇인가요?&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;HTML 태그 중에 strong과 em 태그의 차이점은 무엇인가요?&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;컨텐츠 요소를 가운데로 오게 하는 방법을 알려주세요!&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;독타입을 선언하는 이유에 대해서 설명하세요.&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                                &lt;a href="#" class="more ir_pm" title="더보기"&gt;더보기&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;!-- //게시판 --&gt;
+                            
+                            &lt;!-- 게시판 유형2 --&gt;
+                            &lt;div class="notice2"&gt;
+                                &lt;h4&gt;웹 디자이너 면접 질문&lt;/h4&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;JPG, PNG, GIF의 차이점이 무엇인가요?&lt;/a&gt;&lt;span&gt;2018.11.16&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;UI 디자인과 UX 디자인의 차이점을 설명하세요.&lt;/a&gt;&lt;span&gt;2018.11.16&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;인터랙션 디자인의 핵심은 무엇이라고 생각하나요?&lt;/a&gt;&lt;span&gt;2018.11.16&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;포트폴리오를 하면서 가장 잘 했다고 생각하는 부분은 무엇인가요?&lt;/a&gt;&lt;span&gt;2018.11.16&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;웹 디자인과 모바일 디자인의 차이가 무엇이라고 생각하나요?&lt;/a&gt;&lt;span&gt;2018.11.16&lt;/span&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                                &lt;a href="#" class="more ir_pm" title="더보기"&gt;더보기&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;!-- //게시판 유형2 --&gt;
+                        &lt;/div&gt;
+                        &lt;!-- //col1 --&gt;
+                        &lt;div class="column col2"&gt;
+                            &lt;h3&gt;&lt;span class="ico_img ir_pm"&gt;아이콘2&lt;/span&gt;&lt;em class="ico_tit"&gt;Notice&lt;/em&gt;&lt;/h3&gt;
+                            &lt;p class="ico_desc"&gt;가장 웹 페이지에서 기본이 되는 게시판 유형입니다.&lt;/p&gt;
+                            &lt;!-- 게시판 유형3 --&gt;
+                            &lt;div class="notice3"&gt;
+                                &lt;h4&gt;HTML Reference&lt;/h4&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;
+                                        &lt;a href="#"&gt;
+                                            &lt;img src="img/notice01.jpg" alt="이미지1"&gt;
+                                            &lt;strong&gt;[HTML] &lt;table&gt;&lt;/strong&gt;
+                                            &lt;span&gt;&lt;table&gt; 태그는 표를 만들 때 사용합니다.&lt;/span&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                        &lt;a href="#"&gt;
+                                            &lt;img src="img/notice02.jpg" alt="이미지2"&gt;
+                                            &lt;strong&gt;[HTML] &lt;div&gt;&lt;/strong&gt;
+                                            &lt;span&gt;&lt;div&gt; 태그는 문서의 섹션을 만들거나 영역을 나눌 때 사용합니다.&lt;/span&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                        &lt;a href="#"&gt;
+                                            &lt;img src="img/notice03.jpg" alt="이미지3"&gt;
+                                            &lt;strong&gt;[HTML] &lt;dl&gt;&lt;/strong&gt;
+                                            &lt;span&gt;&lt;dl&gt; 태그는 용어를 설명하는 목록형 태그입니다.&lt;/span&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                        &lt;a href="#"&gt;
+                                            &lt;img src="img/notice04.jpg" alt="이미지4"&gt;
+                                            &lt;strong&gt;[HTML] &lt;em&gt;&lt;/strong&gt;
+                                            &lt;span&gt;&lt;em&gt; 태그는 텍스트를 강조할 때 사용합니다.&lt;/span&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                                &lt;a href="#" class="more ir_pm" title="더보기"&gt;더보기&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;!-- //게시판 유형3 --&gt;
+                        &lt;/div&gt;
+                        &lt;!-- //col2 --&gt;
+                        &lt;div class="column col3"&gt;
+                            &lt;h3&gt;&lt;span class="ico_img ir_pm"&gt;아이콘3&lt;/span&gt;&lt;em class="ico_tit"&gt;Notice&lt;/em&gt;&lt;/h3&gt;
+                            &lt;p class="ico_desc"&gt;가장 웹 페이지에서 기본이 되는 게시판 유형입니다.&lt;/p&gt;
+                            &lt;!-- 로그인 --&gt;
+                            &lt;div id="login-wrap"&gt;
+                                &lt;h4 class="ir_su"&gt;로그인 정보&lt;/h4&gt;
+                                &lt;form id="login_form" name="login_form" method="post"&gt;
+                                    &lt;fieldset&gt;
+                                        &lt;legend class="ir_su"&gt;로그인 및 관련 설정&lt;/legend&gt;
+                                        &lt;div class="login_header"&gt;
+                                            &lt;h5 class="ir_su"&gt;로그인 보안&lt;/h5&gt;
+                                            &lt;div class="lh_check"&gt;
+                                                &lt;input id="infor_check" type="checkbox" class="input_check"&gt;
+                                                &lt;label for="infor_check"&gt;로그인 상태 유지&lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class="lh_ip"&gt;
+                                                IP보안 &lt;em&gt;ON&lt;/em&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="login_content"&gt;
+                                            &lt;h5 class="ir_su"&gt;로그인 영역&lt;/h5&gt;
+                                            &lt;div class="lc_text"&gt;
+                                                &lt;label for="uid" class="ir_su"&gt;아이디&lt;/label&gt;
+                                                &lt;input type="text" id="uid" name="uid" class="input_text" maxlength="20"&gt;
+                                                &lt;label for="upw" class="ir_su"&gt;비밀번호&lt;/label&gt;
+                                                &lt;input type="password" id="upw" name="upw" class="input_text" maxlength="20"&gt;
+                                            &lt;/div&gt;
+                                            &lt;button class="lc_btn" type="submit"&gt;로그인&lt;/button&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="loing_footer"&gt;
+                                            &lt;h5 class="ir_su"&gt;로그인 문제해결&lt;/h5&gt;
+                                            &lt;ul&gt;
+                                                &lt;li&gt;&lt;a href="#"&gt;&lt;strong&gt;회원가입&lt;/strong&gt;&lt;/a&gt; /&lt;/li&gt;
+                                                &lt;li&gt;&lt;a href="#"&gt;아이디&lt;/a&gt;&middot;&lt;a href="#"&gt;비밀번호 찾기&lt;/a&gt;&lt;/li&gt;
+                                            &lt;/ul&gt;
+                                        &lt;/div&gt;
+                                    &lt;/fieldset&gt;
+                                &lt;/form&gt;
+                            &lt;/div&gt;
+                            &lt;!-- //로그인 --&gt;
+                        &lt;/div&gt;
+                        &lt;!-- //col3 --&gt;
+                        &lt;div class="column col4"&gt;
+                            &lt;h3&gt;&lt;span class="ico_img ir_pm"&gt;아이콘4&lt;/span&gt;&lt;em class="ico_tit"&gt;Notice&lt;/em&gt;&lt;/h3&gt;
+                            &lt;p class="ico_desc"&gt;가장 웹 페이지에서 기본이 되는 게시판 유형입니다.&lt;/p&gt;
+                            &lt;!-- 오버효과 --&gt;
+                            &lt;div class="notice_hover"&gt;
+                                &lt;h4&gt;Mouse Hover&lt;/h4&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;
+                                        &lt;a href="#"&gt;
+                                            &lt;span&gt;&lt;img src="img/sban01.jpg" alt="이미지1"&gt;&lt;em&gt;바로가기&lt;/em&gt;&lt;/span&gt;
+                                            &lt;strong&gt;와이어 프레임&lt;/strong&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                        &lt;a href="#"&gt;
+                                            &lt;span&gt;&lt;img src="img/sban02.jpg" alt="이미지2"&gt;&lt;em&gt;바로가기&lt;/em&gt;&lt;/span&gt;
+                                            &lt;strong&gt;스케치 작업&lt;/strong&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class="last"&gt;
+                                        &lt;a href="#"&gt;
+                                            &lt;span&gt;&lt;img src="img/sban03.jpg" alt="이미지3"&gt;&lt;em&gt;바로가기&lt;/em&gt;&lt;/span&gt;
+                                            &lt;strong&gt;UI 디자인&lt;/strong&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+                            &lt;!-- //오버효과 --&gt;
+                            &lt;!-- 오버효과2 --&gt;
+                            &lt;div class="notice_hover2 mt15"&gt;
+                                &lt;h4 class="ir_su"&gt;Mouse Hover2&lt;/h4&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;
+                                        &lt;a href="#"&gt;
+                                            &lt;span&gt;&lt;img src="img/sban04.jpg" alt="이미지1"&gt;&lt;em&gt;바로가기&lt;/em&gt;&lt;/span&gt;
+                                            &lt;strong&gt;HTML&lt;/strong&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                        &lt;a href="#"&gt;
+                                            &lt;span&gt;&lt;img src="img/sban05.jpg" alt="이미지2"&gt;&lt;em&gt;바로가기&lt;/em&gt;&lt;/span&gt;
+                                            &lt;strong&gt;CSS&lt;/strong&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class="last"&gt;
+                                        &lt;a href="#"&gt;
+                                            &lt;span&gt;&lt;img src="img/sban06.jpg" alt="이미지3"&gt;&lt;em&gt;바로가기&lt;/em&gt;&lt;/span&gt;
+                                            &lt;strong&gt;jQuery&lt;/strong&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+                            &lt;!-- //오버효과2 --&gt;
+                        &lt;/div&gt;
+                        &lt;!-- //col4 --&gt;
+                        &lt;div class="column col5"&gt;
+                            &lt;h3&gt;&lt;span class="ico_img ir_pm"&gt;아이콘5&lt;/span&gt;&lt;em class="ico_tit"&gt;Notice&lt;/em&gt;&lt;/h3&gt;
+                            &lt;p class="ico_desc"&gt;가장 웹 페이지에서 기본이 되는 게시판 유형입니다.&lt;/p&gt;
+                            &lt;!-- 탭 메뉴 --&gt;
+                            &lt;div class="tab_menu"&gt;
+                                &lt;h4 class="ir_su"&gt;탭 메뉴&lt;/h4&gt;
+                                &lt;ul&gt;
+                                    &lt;li class="active"&gt;&lt;a href="#"&gt;공지사항1&lt;/a&gt;
+                                        &lt;ul&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;첫 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;첫 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;첫 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;공지사항2&lt;/a&gt;
+                                        &lt;ul style="display: none"&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;두 번째 공지사항 탭메뉴 테스트 목록입니다.&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;두 번째 공지사항 탭메뉴 테스트 목록입니다.&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;두 번째 공지사항 탭메뉴 테스트 목록입니다.&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;공지사항3&lt;/a&gt;
+                                        &lt;ul style="display: none"&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;세 번째 공지사항 탭메뉴 테스트 목록입니다.&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;세 번째 공지사항 탭메뉴 테스트 목록입니다.&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li&gt;&lt;a href="#"&gt;세 번째 공지사항 탭메뉴 테스트 목록입니다.&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+                            &lt;!-- //탭 메뉴 --&gt;
+                            &lt;!-- 게시판 유형4 --&gt;
+                            &lt;div class="notice4 mt15"&gt;
+                                &lt;h4&gt;최신 &lt;em&gt;공지사항&lt;/em&gt;&lt;/h4&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;웹 디자이너와 웹 퍼블리셔의 차이점은 무엇인가요?&lt;/a&gt;&lt;span&gt;2018.11.19&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;웹 디자이너와 웹 퍼블리셔의 차이점은 무엇인가요?&lt;/a&gt;&lt;span&gt;2018.11.19&lt;/span&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;웹 디자이너와 웹 퍼블리셔의 차이점은 무엇인가요?&lt;/a&gt;&lt;span&gt;2018.11.19&lt;/span&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                                &lt;a href="#" class="more" title="더보기"&gt;더보기&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;!-- //게시판 유형4 --&gt;
+                        &lt;/div&gt;
+                        &lt;!-- //col5 --&gt;
+                        &lt;div class="column col6"&gt;
+                            &lt;h3&gt;&lt;span class="ico_img ir_pm"&gt;아이콘6&lt;/span&gt;&lt;em class="ico_tit"&gt;Notice&lt;/em&gt;&lt;/h3&gt;
+                            &lt;p class="ico_desc"&gt;가장 웹 페이지에서 기본이 되는 게시판 유형입니다.&lt;/p&gt;
+                            &lt;!-- 갤러리 --&gt;
+                            &lt;div class="gallery"&gt;
+                                &lt;h4&gt;포트폴리오&lt;/h4&gt;
+                                &lt;div class="gallery_btn"&gt;
+                                    &lt;ul&gt;
+                                        &lt;li class="gb_icon1"&gt;&lt;a href="#"&gt;&lt;span class="ir_pm"&gt;시작&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li class="gb_icon2"&gt;&lt;a href="#"&gt;&lt;span class="ir_pm"&gt;정지&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li class="gb_icon3"&gt;&lt;a href="#"&gt;&lt;span class="ir_pm"&gt;이전이미지&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li class="gb_icon4"&gt;&lt;a href="#"&gt;&lt;span class="ir_pm"&gt;다음이미지&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/div&gt;
+                                &lt;div class="gallery_img"&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href="#"&gt;&lt;img src="img/gallery01.jpg" alt="갤러리1"&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="#"&gt;&lt;img src="img/gallery02.jpg" alt="갤러리2"&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="#"&gt;&lt;img src="img/gallery03.jpg" alt="갤러리3"&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="#"&gt;&lt;img src="img/gallery04.jpg" alt="갤러리4"&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="#"&gt;&lt;img src="img/gallery05.jpg" alt="갤러리5"&gt;&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;!-- //갤러리 --&gt;
+                        &lt;/div&gt;
+                        &lt;!-- //col6 --&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //cont_cont --&gt;
+        &lt;/div&gt;
+        &lt;!-- //contents --&gt;
+        
+        &lt;div id="footer" role="footer"&gt;
+            &lt;div class="container"&gt;footer&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- //footer --&gt;
+    &lt;/div&gt;
+    &lt;!-- //wrap --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+
+
+
+
+
+
+</code></pre>                
+            </div>
+        </div>
+    </div>
+    <!-- // codr-cont-->
+    
+    <div id="codr-right">
+        <div class="yout">
+<iframe width="400" height="225" src="https://www.youtube.com/embed/qztTwl5qTgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        </div>
+   
+        <div id="tab-tit2">
+            <a href="#" class="youtbtn"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            <ul>
+                <li><a href="#" class="active"><i class="fa fa-clipboard" aria-hidden="true"></i> 소개</a></li>
+                <li><a href="#"><i class="fa fa-diamond" aria-hidden="true"></i> 메뉴</a></li>
+                <li><a href="#"><i class="fa fa-pie-chart" aria-hidden="true"></i> 참고</a></li>
+            </ul>
+        </div>
+        <div id="tab-cont2">
+            
+            <div id="tab-nav2">
+                <h5 class="tit">26. 웹 표준 사이트 만들기(2019) - 로그인</h5>
+                <p class="txt">로그인 영역 코딩 예제입니다.</p>
+                
+                <h5>완성</h5>
+                <div class="title">
+                    <a href="https://webstoryboy.github.io/webstandard2019/sample193_26.html" target="_blank"><i class="fa fa-file-code-o" aria-hidden="true"></i> 완성 샘플 보기</a><br />
+                    <a href="https://github.com/webstoryboy/webstandard2019" target="_blank"><i class="fa fa-file-code-o" aria-hidden="true"></i> 완성 소스 다운 받기</a>
+                </div>
+                
+                <h5>광고</h5>
+                <div class="ad">
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- webstoryboy main -->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-5913874937139786" data-ad-slot="3764840331"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+				</div>
+            </div>
+            
+            <div id="tab-nav">
+                <!-- 메뉴 나오는 곳 -->
+            </div>
+            
+            <div id="tab-nav3">
+                <h5>레퍼런스 사이트</h5>
+                <div>
+                    <span><a href="https://webzz.tistory.com/221">HTML REFERENCE</a></span>
+                    <span><a href="https://webzz.tistory.com/353">CSS REFERENCE</a></span>
+                    <span><a href="https://webzz.tistory.com/16">JAVASCRIPT REFERENCE</a></span>
+                    <span><a href="https://webzz.tistory.com/25">JQUERY REFERENCE</a></span>
+                </div>
+                
+                <h5>관련 사이트</h5>
+                <div>
+                    <span><a href="https://fonts.google.com/">구글 폰트</a></span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- //codr-right-->
+</div>    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
